@@ -1,0 +1,256 @@
+openapi: 3.0.3
+info:
+  title: Rasayel REST Channels API
+  version: v1
+  description: 'Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider''s public Postman collection.'
+  contact:
+    name: Rasayel
+    url: https://rasayel.io
+  x-apievangelist-method: derived
+  x-apievangelist-source: https://rest.developers.rasayel.io/ (public Postman collection 34761025)
+  x-apievangelist-generated: '2026-07-20'
+servers:
+- url: https://api.rasayel.io/v1
+security:
+- basicToken: []
+tags:
+- name: Channels
+paths:
+  /channels:
+    get:
+      operationId: channelsFetchChannels
+      summary: Fetch Channels
+      tags:
+      - Channels
+      responses:
+        '200':
+          description: Fetch Channels
+          content:
+            application/json:
+              example:
+                data:
+                - id: 233
+                  display_name: Touch Dream Labs LLC
+                  channel_type: gbm
+                  active: true
+                  created_at: '2021-10-08T08:31:05.236Z'
+                  updated_at: '2022-07-07T08:07:02.574Z'
+                  discarded_at: null
+                - id: 325
+                  display_name: 'Touch Dream Labs '
+                  channel_type: gbm
+                  active: true
+                  created_at: '2022-01-05T14:22:27.183Z'
+                  updated_at: '2022-07-07T08:07:14.639Z'
+                  discarded_at: null
+                - id: 136
+                  display_name: TryingBot
+                  channel_type: facebook
+                  active: true
+                  created_at: '2021-07-27T13:16:26.577Z'
+                  updated_at: '2021-08-05T12:29:53.396Z'
+                  discarded_at: '2021-08-05T12:29:53.396Z'
+                - id: 139
+                  display_name: Test Company
+                  channel_type: facebook
+                  active: true
+                  created_at: '2021-07-27T13:16:28.165Z'
+                  updated_at: '2021-08-05T12:29:57.499Z'
+                  discarded_at: '2021-08-05T12:29:57.499Z'
+                - id: 268
+                  display_name: adsfasdfasdfasdfad
+                  channel_type: telegram
+                  active: true
+                  created_at: '2021-10-26T21:31:06.610Z'
+                  updated_at: '2021-10-26T21:31:21.491Z'
+                  discarded_at: '2021-10-26T21:31:21.491Z'
+                - id: 305
+                  display_name: Viber Bot
+                  channel_type: viber
+                  active: true
+                  created_at: '2021-12-11T14:23:53.283Z'
+                  updated_at: '2021-12-11T15:19:58.990Z'
+                  discarded_at: '2021-12-11T15:19:58.990Z'
+                - id: 264
+                  display_name: metal_syndrome
+                  channel_type: twitter
+                  active: true
+                  created_at: '2021-10-23T09:16:35.193Z'
+                  updated_at: '2021-11-09T10:39:45.313Z'
+                  discarded_at: '2021-11-09T10:39:45.313Z'
+                - id: 306
+                  display_name: Blue Shirt Co.
+                  channel_type: viber
+                  active: true
+                  created_at: '2021-12-11T14:28:18.945Z'
+                  updated_at: '2021-12-11T14:41:42.292Z'
+                  discarded_at: '2021-12-11T14:41:42.292Z'
+                - id: 253
+                  display_name: octodev1
+                  channel_type: twitter
+                  active: true
+                  created_at: '2021-10-21T15:51:46.647Z'
+                  updated_at: '2022-02-25T12:33:30.276Z'
+                  discarded_at: '2022-02-25T12:33:30.276Z'
+                - id: 425
+                  display_name: Personal Twitter
+                  channel_type: twitter
+                  active: true
+                  created_at: '2022-02-25T12:46:04.265Z'
+                  updated_at: '2022-02-28T11:51:22.687Z'
+                  discarded_at: '2022-02-28T11:51:22.687Z'
+                - id: 343
+                  display_name: Blue Shirt Viber CO.
+                  channel_type: viber
+                  active: true
+                  created_at: '2022-01-11T10:40:06.445Z'
+                  updated_at: '2022-07-07T08:07:53.212Z'
+                  discarded_at: null
+                - id: 335
+                  display_name: octopdsdev1
+                  channel_type: instagram
+                  active: true
+                  created_at: '2022-01-10T13:53:32.067Z'
+                  updated_at: '2024-02-09T08:49:36.871Z'
+                  discarded_at: '2024-02-09T08:49:36.871Z'
+                - id: 137
+                  display_name: DuPo Test
+                  channel_type: facebook
+                  active: true
+                  created_at: '2021-07-27T13:16:27.264Z'
+                  updated_at: '2024-03-06T21:38:55.602Z'
+                  discarded_at: '2024-03-06T21:38:55.601Z'
+                - id: 473
+                  display_name: Telegram Test bot
+                  channel_type: telegram
+                  active: true
+                  created_at: '2022-04-20T08:54:19.947Z'
+                  updated_at: '2022-04-20T08:56:15.443Z'
+                  discarded_at: '2022-04-20T08:56:15.442Z'
+                - id: 471
+                  display_name: Telnyx Test
+                  channel_type: telnyx_waba
+                  active: true
+                  created_at: '2022-04-07T18:04:47.487Z'
+                  updated_at: '2024-03-06T21:38:47.877Z'
+                  discarded_at: '2024-03-06T21:38:47.876Z'
+                - id: 440
+                  display_name: 360 dialog waba
+                  channel_type: dialog_waba
+                  active: true
+                  created_at: '2022-03-17T13:47:11.026Z'
+                  updated_at: '2022-04-01T14:30:13.433Z'
+                  discarded_at: '2022-04-01T14:30:13.432Z'
+                - id: 60
+                  display_name: Twilio SMS channel
+                  channel_type: twilio_sms
+                  active: true
+                  created_at: '2021-03-28T21:58:35.398Z'
+                  updated_at: '2022-10-11T20:32:04.012Z'
+                  discarded_at: null
+                - id: 87
+                  display_name: Twilio Waba
+                  channel_type: twilio_waba
+                  active: true
+                  created_at: '2021-04-27T15:00:32.812Z'
+                  updated_at: '2022-07-07T08:06:53.596Z'
+                  discarded_at: null
+                - id: 367
+                  display_name: VK blue shirt co Test
+                  channel_type: vkontakte
+                  active: true
+                  created_at: '2022-01-24T12:34:13.770Z'
+                  updated_at: '2022-07-07T08:08:20.738Z'
+                  discarded_at: null
+                - id: 314
+                  display_name: Boto
+                  channel_type: telegram
+                  active: true
+                  created_at: '2021-12-22T13:41:12.294Z'
+                  updated_at: '2022-08-23T18:40:58.934Z'
+                  discarded_at: '2022-08-23T18:40:58.934Z'
+                - id: 58
+                  display_name: RasayelTest Bot
+                  channel_type: telegram
+                  active: true
+                  created_at: '2021-03-28T19:41:25.126Z'
+                  updated_at: '2022-08-08T10:25:50.951Z'
+                  discarded_at: '2022-08-08T10:25:50.950Z'
+                - id: 537
+                  display_name: ABM 1
+                  channel_type: abm
+                  active: true
+                  created_at: '2022-06-20T16:13:22.193Z'
+                  updated_at: '2022-07-07T08:08:31.897Z'
+                  discarded_at: null
+                - id: 540
+                  display_name: Oct test
+                  channel_type: facebook
+                  active: true
+                  created_at: '2022-06-23T07:55:10.257Z'
+                  updated_at: '2022-06-23T08:12:21.812Z'
+                  discarded_at: '2022-06-23T08:12:21.812Z'
+                - id: 541
+                  display_name: Inbox
+                  channel_type: email
+                  active: false
+                  created_at: '2022-06-23T12:36:53.178Z'
+                  updated_at: '2023-04-03T08:52:40.764Z'
+                  discarded_at: '2022-06-24T14:52:50.291Z'
+                - id: 543
+                  display_name: Youssef's personal email
+                  channel_type: email
+                  active: false
+                  created_at: '2022-06-26T14:43:13.384Z'
+                  updated_at: '2023-04-03T08:52:37.468Z'
+                  discarded_at: '2022-06-26T18:59:58.105Z'
+                - id: 547
+                  display_name: OutlookInbox
+                  channel_type: email
+                  active: false
+                  created_at: '2022-06-28T09:44:27.405Z'
+                  updated_at: '2023-04-03T08:52:29.298Z'
+                  discarded_at: '2022-07-22T12:16:13.574Z'
+                - id: 64
+                  display_name: Yellow Shirt
+                  channel_type: telegram
+                  active: true
+                  created_at: '2021-04-11T10:18:36.146Z'
+                  updated_at: '2022-09-19T09:40:38.537Z'
+                  discarded_at: null
+                - id: 648
+                  display_name: Purple Shirt Co
+                  channel_type: dialog_waba
+                  active: true
+                  created_at: '2022-08-29T15:36:14.422Z'
+                  updated_at: '2022-11-16T11:43:34.338Z'
+                  discarded_at: '2022-11-16T11:43:34.338Z'
+                - id: 548
+                  display_name: Telnyx 1
+                  channel_type: telnyx_waba
+                  active: true
+                  created_at: '2022-07-01T16:29:23.037Z'
+                  updated_at: '2024-03-06T21:38:51.754Z'
+                  discarded_at: '2024-03-06T21:38:51.754Z'
+                - id: 144
+                  display_name: BuDu Test
+                  channel_type: facebook
+                  active: true
+                  created_at: '2021-08-05T12:30:21.386Z'
+                  updated_at: '2022-09-30T14:06:47.484Z'
+                  discarded_at: null
+                pagination:
+                  total_count: 61
+                  total_pages: 3
+                  current_page: 1
+                  next_page: 2
+                  previous_page: null
+                  first_page: true
+                  last_page: false
+components:
+  securitySchemes:
+    basicToken:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: 'Basic Auth value from a Rasayel API key. Send as: Authorization: Basic {token}. API keys carry a Read or Read/Write scope. Optional X_On_Behalf_Of header impersonates a user by ID.'

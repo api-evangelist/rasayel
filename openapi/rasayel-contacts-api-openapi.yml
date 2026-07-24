@@ -1,0 +1,956 @@
+openapi: 3.0.3
+info:
+  title: Rasayel REST Channels Contacts API
+  version: v1
+  description: 'Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider''s public Postman collection.'
+  contact:
+    name: Rasayel
+    url: https://rasayel.io
+  x-apievangelist-method: derived
+  x-apievangelist-source: https://rest.developers.rasayel.io/ (public Postman collection 34761025)
+  x-apievangelist-generated: '2026-07-20'
+servers:
+- url: https://api.rasayel.io/v1
+security:
+- basicToken: []
+tags:
+- name: Contacts
+paths:
+  /contacts:
+    get:
+      operationId: contactsFetchContacts
+      summary: Fetch Contacts
+      tags:
+      - Contacts
+      responses:
+        '200':
+          description: Fetch Contacts
+          content:
+            application/json:
+              example:
+                data:
+                - id: 143451
+                  name: Ahmed
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: ahmed.adel@testRasayel.com
+                  phone: null
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2022-12-27T10:03:16.823Z'
+                  updated_at: '2022-12-27T10:03:16.823Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 312818
+                  name: Jane Doe
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '38976123123'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-01-31T18:42:47.466Z'
+                  updated_at: '2023-01-31T18:42:47.466Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1125016
+                  name: TRest
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: test@testig.comn
+                  phone: null
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-04-06T07:11:48.519Z'
+                  updated_at: '2023-04-06T07:11:48.519Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 474007
+                  name: ''
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '34622310425'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-02-17T15:34:28.716Z'
+                  updated_at: '2023-02-17T15:34:28.716Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 643435
+                  name: ''
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '16037670030'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-06T09:34:35.349Z'
+                  updated_at: '2023-03-06T09:34:35.349Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955317
+                  name: '966533952817'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966533952817'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:41.014Z'
+                  updated_at: '2023-03-29T11:51:33.815Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955422
+                  name: '966581990160'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966581990160'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T09:00:34.091Z'
+                  updated_at: '2023-03-29T11:51:36.601Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1360131
+                  name: Arabic
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: arabic-322@hotmail.com
+                  phone: '5225532503216'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-05-01T10:29:09.925Z'
+                  updated_at: '2023-05-01T10:29:10.013Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955307
+                  name: '966564000128'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966564000128'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.106Z'
+                  updated_at: '2023-03-29T11:51:32.934Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955308
+                  name: '966566091333'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966566091333'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.197Z'
+                  updated_at: '2023-03-29T11:51:33.009Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955309
+                  name: '966551008351'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966551008351'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.291Z'
+                  updated_at: '2023-03-29T11:51:33.086Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955310
+                  name: '966500572733'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966500572733'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.370Z'
+                  updated_at: '2023-03-29T11:51:33.160Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955311
+                  name: '966561474745'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966561474745'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.443Z'
+                  updated_at: '2023-03-29T11:51:33.242Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955312
+                  name: '966540545120'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966540545120'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.535Z'
+                  updated_at: '2023-03-29T11:51:33.315Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955313
+                  name: '966553490736'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966553490736'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.617Z'
+                  updated_at: '2023-03-29T11:51:33.439Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955314
+                  name: '966590589864'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966590589864'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.683Z'
+                  updated_at: '2023-03-29T11:51:33.530Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955315
+                  name: '966566290990'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966566290990'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.802Z'
+                  updated_at: '2023-03-29T11:51:33.615Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955316
+                  name: '966550535692'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966550535692'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.920Z'
+                  updated_at: '2023-03-29T11:51:33.750Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955318
+                  name: '966537775403'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966537775403'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:41.078Z'
+                  updated_at: '2023-03-29T11:51:33.894Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955319
+                  name: '966533063030'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966533063030'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:41.145Z'
+                  updated_at: '2023-03-29T11:51:33.968Z'
+                  account_id: 40
+                  app_id: 40
+                pagination:
+                  total_count: 9019
+                  total_pages: 451
+                  current_page: 1
+                  next_page: 2
+                  previous_page: null
+                  first_page: true
+                  last_page: false
+    post:
+      operationId: contactsCreateContact
+      summary: Create Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: Ahmed
+              phone: '201110892957'
+              tag_ids:
+              - 1889
+              - 1771
+              properties:
+              - id: 11
+                value: 23 Imaginary st.
+      responses:
+        '201':
+          description: Create Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Ahmed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: null
+                phone: '201110892957'
+                tags:
+                - id: 1889
+                  tag_name: VIP
+                  tag_description: ''
+                  tag_color: '#DC2626'
+                  created_at: '2023-09-08T10:47:35.883Z'
+                  updated_at: '2023-09-08T10:47:35.883Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1771
+                  tag_name: hs-sync-qa
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-08-28T09:02:26.321Z'
+                  updated_at: '2023-08-28T09:02:26.321Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 56
+                properties:
+                - id: 11
+                  name: Address
+                  custom: true
+                  editable: true
+                  value: 23 Imaginary st.
+                  label: null
+                  value_type: TEXT
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Ahmed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:50:54.643Z'
+                account_id: 40
+                app_id: 40
+  /contacts/{id}:
+    patch:
+      operationId: contactsUpdateContact
+      summary: Update Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: Mohamed
+              phone: '+201508293385'
+              email: updated_email@rasayel.io
+              tag_ids:
+              - 1892
+              - 1893
+              properties:
+              - id: 11
+                value: 23 Imaginary st.
+      responses:
+        '201':
+          description: Update Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 11
+                  name: Address
+                  custom: true
+                  editable: true
+                  value: 23 Imaginary st.
+                  label: null
+                  value_type: TEXT
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      operationId: contactsFetchContact
+      summary: Fetch Contact
+      tags:
+      - Contacts
+      responses:
+        '200':
+          description: Fetch Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /contacts/{id}/tag:
+    post:
+      operationId: contactsTagContact
+      summary: Tag Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              tag_ids:
+              - 1890
+      responses:
+        '201':
+          description: Tag Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      operationId: contactsUntagContact
+      summary: Untag Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              tag_ids:
+              - 1892
+      responses:
+        '201':
+          description: Untag Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /contacts/{id}/properties:
+    post:
+      operationId: contactsAttachPropertiesToContact
+      summary: Attach Properties to Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              properties:
+              - id: 11
+                value: 23 Imaginary st.
+      responses:
+        '200':
+          description: Attach Properties to Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 11
+                  name: Address
+                  custom: true
+                  editable: true
+                  value: 23 Imaginary st.
+                  label: null
+                  value_type: TEXT
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      operationId: contactsDetachPropertiesFromContact
+      summary: Detach Properties from Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              properties_ids:
+              - 11
+      responses:
+        '200':
+          description: Detach Properties from Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /contacts/{id}/properties/{property_id}:
+    delete:
+      operationId: contactsDetachPropertyFromContact
+      summary: Detach Property from Contact
+      tags:
+      - Contacts
+      responses:
+        '200':
+          description: Detach Property from Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: property_id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+components:
+  securitySchemes:
+    basicToken:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: 'Basic Auth value from a Rasayel API key. Send as: Authorization: Basic {token}. API keys carry a Read or Read/Write scope. Optional X_On_Behalf_Of header impersonates a user by ID.'

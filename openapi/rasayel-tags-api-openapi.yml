@@ -1,0 +1,316 @@
+openapi: 3.0.3
+info:
+  title: Rasayel REST Channels Tags API
+  version: v1
+  description: 'Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider''s public Postman collection.'
+  contact:
+    name: Rasayel
+    url: https://rasayel.io
+  x-apievangelist-method: derived
+  x-apievangelist-source: https://rest.developers.rasayel.io/ (public Postman collection 34761025)
+  x-apievangelist-generated: '2026-07-20'
+servers:
+- url: https://api.rasayel.io/v1
+security:
+- basicToken: []
+tags:
+- name: Tags
+paths:
+  /tags:
+    get:
+      operationId: tagsFetchTags
+      summary: Fetch Tags
+      tags:
+      - Tags
+      responses:
+        '200':
+          description: Fetch Tags
+          content:
+            application/json:
+              example:
+                data:
+                - id: 44
+                  tag_name: first-customer
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_by_id: 49
+                  created_at: '2021-03-28T20:39:00.011Z'
+                  updated_at: '2021-03-28T20:39:00.011Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 45
+                  tag_name: telegram
+                  tag_description: ''
+                  tag_color: '#2563EB'
+                  created_by_id: 49
+                  created_at: '2021-03-28T20:39:07.450Z'
+                  updated_at: '2021-03-28T20:39:07.450Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 46
+                  tag_name: wants-to-buy
+                  tag_description: ''
+                  tag_color: '#DC2626'
+                  created_by_id: 49
+                  created_at: '2021-03-28T20:40:10.490Z'
+                  updated_at: '2021-03-28T20:40:10.490Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 51
+                  tag_name: trying
+                  tag_description: new tag
+                  tag_color: '#fff'
+                  created_by_id: 49
+                  created_at: '2021-04-13T07:46:29.023Z'
+                  updated_at: '2021-04-13T07:46:29.023Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 200
+                  tag_name: testtags
+                  tag_description: ''
+                  tag_color: '#2563EB'
+                  created_by_id: 52
+                  created_at: '2022-04-12T13:33:03.840Z'
+                  updated_at: '2022-04-12T13:33:03.840Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 237
+                  tag_name: Customer
+                  tag_description: VIP Customer
+                  tag_color: '#EA61F2'
+                  created_by_id: 1194
+                  created_at: '2022-08-05T14:27:06.445Z'
+                  updated_at: '2022-08-05T14:27:06.445Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1889
+                  tag_name: VIP
+                  tag_description: ''
+                  tag_color: '#DC2626'
+                  created_by_id: 1608
+                  created_at: '2023-09-08T10:47:35.883Z'
+                  updated_at: '2023-09-08T10:47:35.883Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_by_id: 1608
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 407
+                  tag_name: create
+                  tag_description: ''
+                  tag_color: '#2563EB'
+                  created_by_id: 1361
+                  created_at: '2022-12-07T13:38:37.284Z'
+                  updated_at: '2022-12-07T13:38:37.284Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 408
+                  tag_name: how many can show up here
+                  tag_description: ''
+                  tag_color: '#2563EB'
+                  created_by_id: 1361
+                  created_at: '2022-12-07T13:38:46.151Z'
+                  updated_at: '2022-12-07T13:38:46.151Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 415
+                  tag_name: room-booking
+                  tag_description: null
+                  tag_color: '#DC2626'
+                  created_by_id: 56
+                  created_at: '2022-12-09T22:55:16.319Z'
+                  updated_at: '2022-12-09T22:55:16.319Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 437
+                  tag_name: newTag
+                  tag_description: newTag
+                  tag_color: '#2563EB'
+                  created_by_id: 2097
+                  created_at: '2022-12-19T20:52:21.877Z'
+                  updated_at: '2022-12-19T20:52:21.877Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 453
+                  tag_name: VK
+                  tag_description: ''
+                  tag_color: '#00FFFF'
+                  created_by_id: 888
+                  created_at: '2022-12-27T10:28:57.695Z'
+                  updated_at: '2022-12-27T10:28:57.695Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_by_id: 1608
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_by_id: 1608
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 622
+                  tag_name: blueconv
+                  tag_description: null
+                  tag_color: '#2563EB'
+                  created_by_id: 52
+                  created_at: '2023-02-01T17:58:29.781Z'
+                  updated_at: '2023-02-01T17:58:29.781Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 730
+                  tag_name: anewtag
+                  tag_description: null
+                  tag_color: '#059669'
+                  created_by_id: 56
+                  created_at: '2023-02-17T14:33:49.595Z'
+                  updated_at: '2023-02-17T14:33:49.595Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 752
+                  tag_name: shopify
+                  tag_description: ''
+                  tag_color: '#059669'
+                  created_by_id: 49
+                  created_at: '2023-02-21T11:24:09.333Z'
+                  updated_at: '2023-02-21T11:24:09.333Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 753
+                  tag_name: order
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_by_id: 49
+                  created_at: '2023-02-21T11:24:14.261Z'
+                  updated_at: '2023-02-21T11:24:14.261Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1771
+                  tag_name: hs-sync-qa
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_by_id: 56
+                  created_at: '2023-08-28T09:02:26.321Z'
+                  updated_at: '2023-08-28T09:02:26.321Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1094
+                  tag_name: sales
+                  tag_description: ''
+                  tag_color: '#DC2626'
+                  created_by_id: 1194
+                  created_at: '2023-04-18T17:00:38.594Z'
+                  updated_at: '2023-04-18T17:00:51.703Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1108
+                  tag_name: Jigooli
+                  tag_description: dog owners
+                  tag_color: '#34D399'
+                  created_by_id: 1194
+                  created_at: '2023-04-28T19:49:27.071Z'
+                  updated_at: '2023-04-28T19:49:27.071Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1166
+                  tag_name: testtag213123
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_by_id: 56
+                  created_at: '2023-05-11T10:15:33.712Z'
+                  updated_at: '2023-05-11T10:15:33.712Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1167
+                  tag_name: 13r531r
+                  tag_description: ''
+                  tag_color: '#F59E0B'
+                  created_by_id: 56
+                  created_at: '2023-05-11T10:15:49.920Z'
+                  updated_at: '2023-05-11T10:15:49.920Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1380
+                  tag_name: cash-on-delivery
+                  tag_description: null
+                  tag_color: '#059669'
+                  created_by_id: 1060
+                  created_at: '2023-06-29T12:10:18.740Z'
+                  updated_at: '2023-06-29T12:10:18.740Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1381
+                  tag_name: user-didnt-interact-with-flow
+                  tag_description: null
+                  tag_color: '#2563EB'
+                  created_by_id: 1060
+                  created_at: '2023-06-29T12:18:23.634Z'
+                  updated_at: '2023-06-29T12:18:23.634Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1382
+                  tag_name: user-ignored-flow
+                  tag_description: null
+                  tag_color: '#DC2626'
+                  created_by_id: 1060
+                  created_at: '2023-06-29T12:18:34.990Z'
+                  updated_at: '2023-06-29T12:18:34.990Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1429
+                  tag_name: asking-for-help
+                  tag_description: null
+                  tag_color: '#F87171'
+                  created_by_id: 56
+                  created_at: '2023-07-11T15:25:17.949Z'
+                  updated_at: '2023-07-11T15:25:17.949Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1481
+                  tag_name: tag 1
+                  tag_description: null
+                  tag_color: '#DC2626'
+                  created_by_id: 1060
+                  created_at: '2023-07-18T09:40:09.024Z'
+                  updated_at: '2023-07-18T09:40:09.024Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1482
+                  tag_name: tag 2
+                  tag_description: null
+                  tag_color: '#34D399'
+                  created_by_id: 1060
+                  created_at: '2023-07-18T09:40:19.399Z'
+                  updated_at: '2023-07-18T09:40:19.399Z'
+                  account_id: 40
+                  app_id: 40
+                pagination:
+                  total_count: 39
+                  total_pages: 2
+                  current_page: 1
+                  next_page: 2
+                  previous_page: null
+                  first_page: true
+                  last_page: false
+components:
+  securitySchemes:
+    basicToken:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: 'Basic Auth value from a Rasayel API key. Send as: Authorization: Basic {token}. API keys carry a Read or Read/Write scope. Optional X_On_Behalf_Of header impersonates a user by ID.'

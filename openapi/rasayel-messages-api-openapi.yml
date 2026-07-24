@@ -1,0 +1,64 @@
+openapi: 3.0.3
+info:
+  title: Rasayel REST Channels Messages API
+  version: v1
+  description: 'Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider''s public Postman collection.'
+  contact:
+    name: Rasayel
+    url: https://rasayel.io
+  x-apievangelist-method: derived
+  x-apievangelist-source: https://rest.developers.rasayel.io/ (public Postman collection 34761025)
+  x-apievangelist-generated: '2026-07-20'
+servers:
+- url: https://api.rasayel.io/v1
+security:
+- basicToken: []
+tags:
+- name: Messages
+paths:
+  /messages:
+    post:
+      operationId: messagesSendAMessage
+      summary: Send a Message
+      tags:
+      - Messages
+      requestBody:
+        content:
+          application/json:
+            example:
+              conversation_id: 3159041
+              type: TEXT
+              text:
+                body: This is a text message
+      responses:
+        '201':
+          description: Sending Text Message with Conversation ID
+          content:
+            application/json:
+              example:
+                id: 59363186
+                uuid: 765f6478-1115-469d-a643-d55259d9f14b
+                message_type: text
+                message_subtype: no_msubtype
+                message_category: user
+                direction: outbound
+                failure_reason: null
+                sent_at: '2024-04-30T14:01:07.777Z'
+                delivered_at: null
+                read_at: null
+                failed_at: null
+                deleted_at: null
+                received_at: null
+                created_at: '2024-04-30T14:01:07.781Z'
+                updated_at: '2024-04-30T14:01:08.265Z'
+                account_id: 40
+                app_id: 40
+                channel_id: 10053
+                conversation_id: 3159041
+components:
+  securitySchemes:
+    basicToken:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: 'Basic Auth value from a Rasayel API key. Send as: Authorization: Basic {token}. API keys carry a Read or Read/Write scope. Optional X_On_Behalf_Of header impersonates a user by ID.'

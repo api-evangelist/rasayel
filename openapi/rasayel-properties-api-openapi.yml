@@ -1,0 +1,187 @@
+openapi: 3.0.3
+info:
+  title: Rasayel REST Channels Properties API
+  version: v1
+  description: 'Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider''s public Postman collection.'
+  contact:
+    name: Rasayel
+    url: https://rasayel.io
+  x-apievangelist-method: derived
+  x-apievangelist-source: https://rest.developers.rasayel.io/ (public Postman collection 34761025)
+  x-apievangelist-generated: '2026-07-20'
+servers:
+- url: https://api.rasayel.io/v1
+security:
+- basicToken: []
+tags:
+- name: Properties
+paths:
+  /properties:
+    get:
+      operationId: propertiesFetchProperties
+      summary: Fetch Properties
+      tags:
+      - Properties
+      responses:
+        '200':
+          description: Fetch Properties
+          content:
+            application/json:
+              example:
+                data:
+                - id: 5
+                  name: User source
+                  type: TEXT
+                  editable: true
+                  description: The source that created or updated this contact
+                  identifier: user_source
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.714Z'
+                  updated_at: '2024-05-27T09:21:11.714Z'
+                  channel_specific: false
+                  uuid: f376149c-8a87-4bcd-9688-b28fb4bb33c3
+                  archived: false
+                  options: null
+                - id: 4
+                  name: User opt out
+                  type: BOOL
+                  editable: true
+                  description: Whether the user has opted out of receiving marketing messages
+                  identifier: user_opt_out
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.711Z'
+                  updated_at: '2024-05-27T09:21:11.711Z'
+                  channel_specific: false
+                  uuid: e09d62d3-35d8-47d8-93b5-7afe0fec3c7c
+                  archived: false
+                  options: null
+                - id: 3
+                  name: User email
+                  type: TEXT
+                  editable: false
+                  description: User email
+                  identifier: user_email
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.707Z'
+                  updated_at: '2024-05-27T09:21:11.707Z'
+                  channel_specific: false
+                  uuid: 2f9a4337-87ef-4e67-9473-cfdfbb8fb8e6
+                  archived: false
+                  options: null
+                - id: 2
+                  name: User phone
+                  type: TEXT
+                  editable: false
+                  description: User phone
+                  identifier: user_phone
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.704Z'
+                  updated_at: '2024-05-27T09:21:11.704Z'
+                  channel_specific: false
+                  uuid: e91de098-32ad-41f3-aabb-0d00da8e9ddc
+                  archived: false
+                  options: null
+                - id: 1
+                  name: User display name
+                  type: TEXT
+                  editable: false
+                  description: User display name
+                  identifier: user_display_name
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.686Z'
+                  updated_at: '2024-05-27T09:21:11.686Z'
+                  channel_specific: false
+                  uuid: c19190aa-ac40-493f-b3cb-3814cd892d06
+                  archived: false
+                  options: null
+                pagination:
+                  total_count: 11
+                  total_pages: 1
+                  current_page: 1
+                  next_page: null
+                  previous_page: null
+                  first_page: true
+                  last_page: true
+    post:
+      operationId: propertiesCreateProperty
+      summary: Create Property
+      tags:
+      - Properties
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: Address
+              type: TEXT
+              description: The address of the contact
+      responses:
+        '200':
+          description: Create Property
+          content:
+            application/json:
+              example:
+                id: 13
+                name: Address
+                type: TEXT
+                editable: true
+                description: The address of the contact
+                identifier: address
+                standard: false
+                account_id: 1
+                app_id: 1
+                created_at: '2024-06-07T12:25:44.394Z'
+                updated_at: '2024-06-07T12:25:44.394Z'
+                channel_specific: false
+                uuid: c7109ee1-3d38-4c2f-9855-9d5458d8f5fe
+                archived: false
+                options: null
+  /properties/{id}:
+    get:
+      operationId: propertiesFetchProperty
+      summary: Fetch Property
+      tags:
+      - Properties
+      responses:
+        '200':
+          description: Fetch Property
+          content:
+            application/json:
+              example:
+                id: 1
+                name: User display name
+                type: TEXT
+                editable: false
+                description: User display name
+                identifier: user_display_name
+                standard: true
+                account_id: 1
+                app_id: 1
+                created_at: '2024-05-27T09:21:11.686Z'
+                updated_at: '2024-05-27T09:21:11.686Z'
+                channel_specific: false
+                uuid: c19190aa-ac40-493f-b3cb-3814cd892d06
+                archived: false
+                options: null
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+components:
+  securitySchemes:
+    basicToken:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: 'Basic Auth value from a Rasayel API key. Send as: Authorization: Basic {token}. API keys carry a Read or Read/Write scope. Optional X_On_Behalf_Of header impersonates a user by ID.'

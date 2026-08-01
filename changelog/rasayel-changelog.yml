@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.rasayel.io/en/changelog
+scheme: dated
+format: product-changelog
+notes: >-
+  Rasayel publishes a dated product changelog (feature additions/improvements),
+  not a semver API changelog. Recent window captured below; the live page is the
+  source of truth.
+entries:
+  - date: '2026-04-28'
+    type: added
+    highlight: Automated HubSpot property updates on contact create and message send/receive.
+  - date: '2026-04-05'
+    type: added
+    highlight: Multi-language support for Authentication (OTP) message templates.
+  - date: '2025-06-20'
+    type: added
+    highlight: Zoho integration activity logging toggle; scheduled campaigns.
+  - date: '2025-06-02'
+    type: added
+    highlight: New reporting experience with reworked queries, new metrics, and raw data.
+  - date: '2025-05-19'
+    type: added
+    highlight: Manual entry for template variable examples.
+  - date: '2025-04-28'
+    type: added
+    highlight: Editable titles for CTA URL buttons.
+  - date: '2025-03-24'
+    type: added
+    highlight: HubSpot integration on the mobile app.
+  - date: '2025-03-14'
+    type: added
+    highlight: Import CSV as campaign audience.
+  - date: '2025-01-27'
+    type: added
+    highlight: Pipedrive property syncing.
+  - date: '2025-01-23'
+    type: added
+    highlight: Flow builder.

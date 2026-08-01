@@ -1,0 +1,26 @@
+{
+  "provider": "rasayel",
+  "sources": [
+    "rasayel-channels-api-openapi.yml",
+    "rasayel-contacts-api-openapi.yml",
+    "rasayel-conversations-api-openapi.yml",
+    "rasayel-messages-api-openapi.yml",
+    "rasayel-properties-api-openapi.yml",
+    "rasayel-tags-api-openapi.yml",
+    "rasayel-templates-api-openapi.yml"
+  ],
+  "outputs": [
+    "rasayel-channels-api-openapi.yml",
+    "rasayel-contacts-api-openapi.yml",
+    "rasayel-conversations-api-openapi.yml",
+    "rasayel-messages-api-openapi.yml",
+    "rasayel-properties-api-openapi.yml",
+    "rasayel-tags-api-openapi.yml",
+    "rasayel-templates-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

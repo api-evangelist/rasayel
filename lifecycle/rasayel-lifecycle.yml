@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: searched
+source: https://rasayel.io / https://docs.rasayel.io
+versioning:
+  scheme: uri-path
+  current: v1
+  base_url: https://api.rasayel.io/v1/
+status_page: https://status.rasayel.io/
+changelog: https://docs.rasayel.io/en/changelog
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal deprecation policy or RFC 8594 Sunset/Deprecation header support was found.
+deprecated_operations: []

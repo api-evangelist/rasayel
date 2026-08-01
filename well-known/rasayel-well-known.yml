@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: probed
+source: live probes of api.rasayel.io and rasayel.io
+notes: >-
+  No usable /.well-known documents were found. api.rasayel.io returns HTTP 200
+  for openid-configuration / oauth-authorization-server / api-catalog but the
+  bodies are empty (content-type text/html, content-length 0) SPA fallbacks, not
+  real discovery documents. security.txt is 401 on the API host and 308 (redirect)
+  on the marketing host.
+documents:
+  - path: /.well-known/security.txt
+    host: https://api.rasayel.io
+    status: 401
+  - path: /.well-known/openid-configuration
+    host: https://api.rasayel.io
+    status: 200
+    empty: true
+  - path: /.well-known/oauth-authorization-server
+    host: https://api.rasayel.io
+    status: 200
+    empty: true
+  - path: /.well-known/api-catalog
+    host: https://api.rasayel.io
+    status: 200
+    empty: true
+  - path: /.well-known/security.txt
+    host: https://rasayel.io
+    status: 308

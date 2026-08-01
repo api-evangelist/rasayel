@@ -1,0 +1,25 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Rasayel REST API
+  version: 1.0.0
+extends: openapi/rasayel-rest-openapi.yml
+actions:
+  - target: $.info
+    update:
+      x-apievangelist-rating-notes: >-
+        Derived from Rasayel's public Postman collection. API-key auth (Basic
+        value), page/per_page pagination, leaky-bucket rate limiting.
+      x-apievangelist-artifacts:
+        authentication: authentication/rasayel-authentication.yml
+        conventions: conventions/rasayel-conventions.yml
+        rate_limits: rate-limits/rasayel-rate-limits.yml
+        errors: errors/rasayel-problem-types.yml
+        data_model: data-model/rasayel-data-model.yml
+  - target: $.info
+    update:
+      x-rate-limit:
+        algorithm: leaky-bucket
+        capacity: 100
+        refill_per_minute: 20
+        usage_header: X_Rasayel_Api_Call_Capacity
+        retry_header: Retry-After

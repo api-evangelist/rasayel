@@ -1,7 +1,27 @@
 aid: rasayel
 name: Rasayel
-description: Rasayel is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Rasayel is a WhatsApp platform for B2B sales teams. It combines a shared team
+  inbox, workflow automation and lead qualification, chatbots and AI, WhatsApp
+  message templates and Flows (forms), and campaign broadcasting, alongside CRM
+  integrations (HubSpot, Pipedrive, Salesforce, Zoho) and Zapier. Its public
+  REST API (api.rasayel.io/v1) and GraphQL API let developers manage contacts,
+  message templates, conversations, tags, channels, and custom properties, and
+  send WhatsApp messages programmatically using API-key authentication with Read
+  and Read/Write scopes.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://github.com/rasayel.png
 url: https://raw.githubusercontent.com/api-evangelist/rasayel/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +31,240 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 20
+  pass: local-v1
 tags:
 - Company
-apis: []
+- WhatsApp
+- Messaging
+- Business Messaging
+- Sales
+- CRM
+- Customer Communication
+- Conversational Commerce
+- API
+apis:
+- aid: rasayel:rasayel-channels-api
+  name: Rasayel Channels API
+  description: The Channels API from Rasayel — 1 operation(s) for channels.
+  humanURL: https://rest.developers.rasayel.io/
+  baseURL: https://api.rasayel.io/v1/
+  tags:
+  - Channels
+  properties:
+  - type: OpenAPI
+    url: openapi/rasayel-channels-api-openapi.yml
+  - type: Authentication
+    url: authentication/rasayel-authentication.yml
+  - type: Conventions
+    url: conventions/rasayel-conventions.yml
+  - type: RateLimits
+    url: rate-limits/rasayel-rate-limits.yml
+  - type: ErrorCatalog
+    url: errors/rasayel-problem-types.yml
+  - type: DataModel
+    url: data-model/rasayel-data-model.yml
+  - type: Conformance
+    url: conformance/rasayel-conformance.yml
+- aid: rasayel:rasayel-contacts-api
+  name: Rasayel Contacts API
+  description: The Contacts API from Rasayel — 5 operation(s) for contacts.
+  humanURL: https://rest.developers.rasayel.io/
+  baseURL: https://api.rasayel.io/v1/
+  tags:
+  - Contacts
+  properties:
+  - type: OpenAPI
+    url: openapi/rasayel-contacts-api-openapi.yml
+  - type: Authentication
+    url: authentication/rasayel-authentication.yml
+  - type: Conventions
+    url: conventions/rasayel-conventions.yml
+  - type: RateLimits
+    url: rate-limits/rasayel-rate-limits.yml
+  - type: ErrorCatalog
+    url: errors/rasayel-problem-types.yml
+  - type: DataModel
+    url: data-model/rasayel-data-model.yml
+  - type: Conformance
+    url: conformance/rasayel-conformance.yml
+- aid: rasayel:rasayel-conversations-api
+  name: Rasayel Conversations API
+  description: The Conversations API from Rasayel — 2 operation(s) for conversations.
+  humanURL: https://rest.developers.rasayel.io/
+  baseURL: https://api.rasayel.io/v1/
+  tags:
+  - Conversations
+  properties:
+  - type: OpenAPI
+    url: openapi/rasayel-conversations-api-openapi.yml
+  - type: Authentication
+    url: authentication/rasayel-authentication.yml
+  - type: Conventions
+    url: conventions/rasayel-conventions.yml
+  - type: RateLimits
+    url: rate-limits/rasayel-rate-limits.yml
+  - type: ErrorCatalog
+    url: errors/rasayel-problem-types.yml
+  - type: DataModel
+    url: data-model/rasayel-data-model.yml
+  - type: Conformance
+    url: conformance/rasayel-conformance.yml
+- aid: rasayel:rasayel-messages-api
+  name: Rasayel Messages API
+  description: The Messages API from Rasayel — 1 operation(s) for messages.
+  humanURL: https://rest.developers.rasayel.io/
+  baseURL: https://api.rasayel.io/v1/
+  tags:
+  - Messages
+  properties:
+  - type: OpenAPI
+    url: openapi/rasayel-messages-api-openapi.yml
+  - type: Authentication
+    url: authentication/rasayel-authentication.yml
+  - type: Conventions
+    url: conventions/rasayel-conventions.yml
+  - type: RateLimits
+    url: rate-limits/rasayel-rate-limits.yml
+  - type: ErrorCatalog
+    url: errors/rasayel-problem-types.yml
+  - type: DataModel
+    url: data-model/rasayel-data-model.yml
+  - type: Conformance
+    url: conformance/rasayel-conformance.yml
+- aid: rasayel:rasayel-properties-api
+  name: Rasayel Properties API
+  description: The Properties API from Rasayel — 2 operation(s) for properties.
+  humanURL: https://rest.developers.rasayel.io/
+  baseURL: https://api.rasayel.io/v1/
+  tags:
+  - Properties
+  properties:
+  - type: OpenAPI
+    url: openapi/rasayel-properties-api-openapi.yml
+  - type: Authentication
+    url: authentication/rasayel-authentication.yml
+  - type: Conventions
+    url: conventions/rasayel-conventions.yml
+  - type: RateLimits
+    url: rate-limits/rasayel-rate-limits.yml
+  - type: ErrorCatalog
+    url: errors/rasayel-problem-types.yml
+  - type: DataModel
+    url: data-model/rasayel-data-model.yml
+  - type: Conformance
+    url: conformance/rasayel-conformance.yml
+- aid: rasayel:rasayel-tags-api
+  name: Rasayel Tags API
+  description: The Tags API from Rasayel — 1 operation(s) for tags.
+  humanURL: https://rest.developers.rasayel.io/
+  baseURL: https://api.rasayel.io/v1/
+  tags:
+  - Tags
+  properties:
+  - type: OpenAPI
+    url: openapi/rasayel-tags-api-openapi.yml
+  - type: Authentication
+    url: authentication/rasayel-authentication.yml
+  - type: Conventions
+    url: conventions/rasayel-conventions.yml
+  - type: RateLimits
+    url: rate-limits/rasayel-rate-limits.yml
+  - type: ErrorCatalog
+    url: errors/rasayel-problem-types.yml
+  - type: DataModel
+    url: data-model/rasayel-data-model.yml
+  - type: Conformance
+    url: conformance/rasayel-conformance.yml
+- aid: rasayel:rasayel-templates-api
+  name: Rasayel Templates API
+  description: The Templates API from Rasayel — 2 operation(s) for templates.
+  humanURL: https://rest.developers.rasayel.io/
+  baseURL: https://api.rasayel.io/v1/
+  tags:
+  - Templates
+  properties:
+  - type: OpenAPI
+    url: openapi/rasayel-templates-api-openapi.yml
+  - type: Authentication
+    url: authentication/rasayel-authentication.yml
+  - type: Conventions
+    url: conventions/rasayel-conventions.yml
+  - type: RateLimits
+    url: rate-limits/rasayel-rate-limits.yml
+  - type: ErrorCatalog
+    url: errors/rasayel-problem-types.yml
+  - type: DataModel
+    url: data-model/rasayel-data-model.yml
+  - type: Conformance
+    url: conformance/rasayel-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: OpenAPI
+  url: openapi/rasayel-rest-openapi.yml
+- type: Authentication
+  url: authentication/rasayel-authentication.yml
+- type: Conventions
+  url: conventions/rasayel-conventions.yml
+- type: RateLimits
+  url: rate-limits/rasayel-rate-limits.yml
+- type: ErrorCatalog
+  url: errors/rasayel-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/rasayel-lifecycle.yml
+- type: StatusPage
+  url: https://status.rasayel.io/
+- type: ChangeLog
+  url: changelog/rasayel-changelog.yml
+- type: DataModel
+  url: data-model/rasayel-data-model.yml
+- type: Conformance
+  url: conformance/rasayel-conformance.yml
+- type: MCPServer
+  url: mcp/rasayel-mcp.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: LLMsTxt
+  url: llms/rasayel-llms.txt
+- type: Overlay
+  url: overlays/rasayel-rest-overlay.yaml
+- type: AgenticAccess
+  url: agentic-access/rasayel-agentic-access.yml
+- type: DomainSecurity
+  url: security/rasayel-domain-security.yml
+- type: Postman
+  url: https://rest.developers.rasayel.io/
+- type: DeveloperPortal
+  url: https://developers.rasayel.io/
+- type: Documentation
+  url: https://docs.rasayel.io/
+- type: APIReference
+  url: https://rest.developers.rasayel.io/
+- type: GettingStarted
+  url: https://docs.rasayel.io/en/introduction
+- type: HelpCenter
+  url: https://docs.rasayel.io/
+- type: Blog
+  url: https://learn.rasayel.io/
+- type: GitHubOrganization
+  url: https://github.com/rasayel
+- type: Pricing
+  url: https://rasayel.io/pricing/
+- type: SignUp
+  url: https://app.rasayel.io/signup
+- type: Login
+  url: https://app.rasayel.io
+- type: TermsOfService
+  url: https://docs.rasayel.io/terms
+- type: PrivacyPolicy
+  url: https://docs.rasayel.io/privacy
 - type: Website
-  url: http://rasayel.io
+  url: https://rasayel.io

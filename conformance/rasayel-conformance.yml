@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/rasayel-rest-openapi.yml + https://rest.developers.rasayel.io/
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: API uses a static API-key (Basic Auth Value) in the Authorization header, not OAuth2.
+  - id: oidc
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors are plain JSON; no application/problem+json envelope documented.
+  - id: rfc8594-sunset-header
+    conforms: false
+  - id: pagination
+    conforms: true
+    evidence: page/per_page query params with a structured pagination response object on all index endpoints.
+  - id: rate-limit-headers
+    conforms: true
+    evidence: X_Rasayel_Api_Call_Capacity usage header and Retry-After on 429 (leaky-bucket).
+  - id: idempotency
+    conforms: false
+    evidence: No idempotency-key header documented.
+  - id: openapi
+    conforms: true
+    evidence: OpenAPI 3.0.3 derived from the provider's public Postman collection.

@@ -1,0 +1,54 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: openapi/rasayel-rest-openapi.yml (derived from public Postman collection)
+notes: >-
+  No official hosted/remote Rasayel MCP server was found. The tools below are a
+  candidate set derived one-per-operation from the Rasayel REST API so an MCP
+  server could be generated. Auth: Authorization: Basic {token} (API key).
+server:
+  name: rasayel
+  transport: http
+tools:
+  - name: list_contacts
+    description: List contacts (paginated).
+    source_operation: openapi/rasayel-rest-openapi.yml#contactsFetchContacts
+  - name: create_contact
+    description: Create a contact.
+    source_operation: openapi/rasayel-rest-openapi.yml#contactsCreateContact
+  - name: get_contact
+    description: Fetch a single contact by id.
+    source_operation: openapi/rasayel-rest-openapi.yml#contactsFetchContact
+  - name: update_contact
+    description: Update a contact.
+    source_operation: openapi/rasayel-rest-openapi.yml#contactsUpdateContact
+  - name: tag_contact
+    description: Add a tag to a contact.
+    source_operation: openapi/rasayel-rest-openapi.yml#contactsTagContact
+  - name: untag_contact
+    description: Remove a tag from a contact.
+    source_operation: openapi/rasayel-rest-openapi.yml#contactsUntagContact
+  - name: list_templates
+    description: List WhatsApp message templates.
+    source_operation: openapi/rasayel-rest-openapi.yml#templatesFetchTemplates
+  - name: create_template
+    description: Create a WhatsApp message template.
+    source_operation: openapi/rasayel-rest-openapi.yml#templatesCreateTemplate
+  - name: send_message
+    description: Send a WhatsApp message.
+    source_operation: openapi/rasayel-rest-openapi.yml#messagesSendAMessage
+  - name: list_conversations
+    description: List conversations, optionally filtered by phone.
+    source_operation: openapi/rasayel-rest-openapi.yml#conversationsFetchConversations
+  - name: update_conversation
+    description: Update a conversation (e.g. state/assignment).
+    source_operation: openapi/rasayel-rest-openapi.yml#conversationsUpdateConversation
+  - name: list_channels
+    description: List connected WhatsApp channels.
+    source_operation: openapi/rasayel-rest-openapi.yml#channelsFetchChannels
+  - name: list_tags
+    description: List tags.
+    source_operation: openapi/rasayel-rest-openapi.yml#tagsFetchTags
+  - name: list_properties
+    description: List custom contact properties.
+    source_operation: openapi/rasayel-rest-openapi.yml#propertiesFetchProperties

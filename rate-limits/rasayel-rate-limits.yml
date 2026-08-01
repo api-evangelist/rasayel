@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://rest.developers.rasayel.io/ (public Postman collection docs)
+scope: account
+algorithm: leaky-bucket
+description: >-
+  Rasayel rate-limits the REST API with a leaky-bucket algorithm. Each client is
+  allocated a bucket with a maximum capacity of 100 tokens; tokens are
+  replenished at a fixed rate of 20 requests per minute. Each request consumes
+  tokens; when the bucket is empty, further requests are delayed/blocked until
+  tokens are available.
+rate_limits:
+  - name: default
+    bucket_capacity: 100
+    limit_count: 20
+    interval: minute
+    refill_rate_per_minute: 20
+headers:
+  usage: X_Rasayel_Api_Call_Capacity
+  usage_format: "{tokens_used}/{max_tokens_limit}"
+  retry: Retry-After
+exceeded_status: 429

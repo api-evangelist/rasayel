@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: derived
+source: >-
+  Derived from documented Rasayel REST API HTTP semantics
+  (https://rest.developers.rasayel.io/); the API returns plain JSON, not
+  RFC 9457 application/problem+json.
+format: plain-json
+notes: >-
+  The Rasayel REST API does not document an RFC 9457 problem+json envelope.
+  Successful list responses use { data, pagination }; single-resource responses
+  return the object directly. The problems below are the standard HTTP error
+  conditions the documented authentication, pagination, and rate-limit behavior
+  imply; titles/remediation are derived, not published verbatim.
+problems:
+  - status: 401
+    title: Unauthorized
+    detail: Missing or invalid Authorization header (Basic {token}).
+    remediation: >-
+      Send a valid "Basic Auth Value" from a Rasayel API key in the
+      Authorization header.
+  - status: 403
+    title: Forbidden
+    detail: The API key's scope does not permit this operation.
+    remediation: Use a Read/Write scoped API key for write operations.
+  - status: 404
+    title: Not Found
+    detail: The requested resource (contact, template, conversation, ...) does not exist.
+  - status: 422
+    title: Unprocessable Entity
+    detail: Request body failed validation.
+    remediation: Check required fields for the resource being created or updated.
+  - status: 429
+    title: Too Many Requests
+    detail: >-
+      Rate limit exceeded (leaky-bucket, 100-token capacity, 20 req/min refill).
+    remediation: >-
+      Honor the Retry-After response header before retrying; monitor the
+      X_Rasayel_Api_Call_Capacity header to stay within capacity.

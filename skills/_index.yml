@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: generated
+source: openapi/rasayel-rest-openapi.yml (derived from public Postman collection)
+skills:
+  - file: rasayel-send-whatsapp-message.md
+    name: Send a WhatsApp message with Rasayel
+    api: openapi/rasayel-rest-openapi.yml
+    operations: [channelsFetchChannels, conversationsFetchConversations, contactsFetchContacts, messagesSendAMessage]
+  - file: rasayel-manage-contacts.md
+    name: Manage Rasayel contacts, tags, and properties
+    api: openapi/rasayel-rest-openapi.yml
+    operations: [contactsFetchContacts, contactsCreateContact, contactsUpdateContact, contactsTagContact, propertiesFetchProperties, contactsAttachPropertiesToContact]
+  - file: rasayel-manage-templates.md
+    name: Manage Rasayel WhatsApp message templates
+    api: openapi/rasayel-rest-openapi.yml
+    operations: [channelsFetchChannels, templatesFetchTemplates, templatesCreateTemplate, templatesUpdateTemplate, templatesFetchTemplate, templatesDeleteTemplate]

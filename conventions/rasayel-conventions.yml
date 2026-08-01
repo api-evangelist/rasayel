@@ -1,0 +1,52 @@
+generated: '2026-07-20'
+method: searched
+source: https://rest.developers.rasayel.io/ (public Postman collection docs)
+api: openapi/rasayel-rest-openapi.yml
+authentication:
+  style: api-key
+  header: Authorization
+  format: "Basic {token}"
+  scopes: [read, read-write]
+  see: authentication/rasayel-authentication.yml
+impersonation:
+  header: X_On_Behalf_Of
+  value: user id
+pagination:
+  style: page-number
+  request_params:
+    - name: page
+      description: The page number to fetch.
+    - name: per_page
+      description: Number of records returned per page.
+  response_field: pagination
+  response_fields:
+    - total_count
+    - total_pages
+    - current_page
+    - next_page
+    - previous_page
+    - first_page
+    - last_page
+  applies_to: All index (list) endpoints are paginated.
+rate_limiting:
+  algorithm: leaky-bucket
+  bucket_capacity: 100
+  refill_rate_per_minute: 20
+  usage_header: X_Rasayel_Api_Call_Capacity
+  usage_header_format: "{tokens_used}/{max_tokens_limit}"
+  retry_header: Retry-After
+  retry_status: 429
+  see: rate-limits/rasayel-rate-limits.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  base_url: https://api.rasayel.io/v1/
+idempotency:
+  supported: false
+  notes: No idempotency-key header is documented for the Rasayel REST API.
+response_envelope:
+  list: "{ data: [...], pagination: {...} }"
+  single: "bare resource object (e.g. a Contact) returned directly"
+  content_type: application/json
+errors:
+  see: errors/rasayel-problem-types.yml

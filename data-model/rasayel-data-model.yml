@@ -1,0 +1,72 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/rasayel-rest-openapi.yml (derived from public Postman collection)
+entities:
+  - name: Contact
+    id_field: id
+    fields_seen: [id, name, first_name, last_name, display_name, email, phone]
+    endpoints:
+      - GET /contacts
+      - POST /contacts
+      - PATCH /contacts/{id}
+      - GET /contacts/{id}
+  - name: Property
+    id_field: id
+    description: Custom contact property definitions and values.
+    endpoints:
+      - GET /properties
+      - POST /properties
+      - GET /properties/{id}
+  - name: Tag
+    id_field: id
+    endpoints:
+      - GET /tags
+  - name: Template
+    id_field: id
+    fields_seen: [id, uuid, name, language, category]
+    description: WhatsApp message templates.
+    endpoints:
+      - GET /templates
+      - POST /templates
+      - PATCH /templates/{id}
+      - DELETE /templates/{id}
+      - GET /templates/{id}
+  - name: Channel
+    id_field: id
+    description: A connected WhatsApp Business channel/number.
+    endpoints:
+      - GET /channels
+  - name: Message
+    endpoints:
+      - POST /messages
+  - name: Conversation
+    id_field: id
+    endpoints:
+      - GET /conversations
+      - PUT /conversations/{id}
+relationships:
+  - from: Contact
+    to: Tag
+    type: has_many
+    via: tag
+    evidence: POST/DELETE /contacts/{id}/tag
+  - from: Contact
+    to: Property
+    type: has_many
+    via: properties
+    evidence: POST/DELETE /contacts/{id}/properties
+  - from: Template
+    to: Channel
+    type: belongs_to
+    via: channel_id
+    evidence: GET /templates?channel_id= query parameter
+  - from: Message
+    to: Conversation
+    type: belongs_to
+    via: conversation
+    evidence: Messages are sent into a conversation on a channel.
+  - from: Conversation
+    to: Contact
+    type: belongs_to
+    via: phone
+    evidence: GET /conversations?phone= query parameter

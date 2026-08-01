@@ -1,0 +1,2557 @@
+openapi: 3.0.3
+info:
+  title: Rasayel REST API
+  version: v1
+  description: 'Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending
+    messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the
+    provider''s public Postman collection.'
+  contact:
+    name: Rasayel
+    url: https://rasayel.io
+  x-apievangelist-method: derived
+  x-apievangelist-source: https://rest.developers.rasayel.io/ (public Postman collection 34761025)
+  x-apievangelist-generated: '2026-07-20'
+servers:
+- url: https://api.rasayel.io/v1
+security:
+- basicToken: []
+tags:
+- name: Contacts
+- name: Templates
+- name: Messages
+- name: Conversations
+- name: Tags
+- name: Channels
+- name: Properties
+paths:
+  /contacts:
+    get:
+      operationId: contactsFetchContacts
+      summary: Fetch Contacts
+      tags:
+      - Contacts
+      responses:
+        '200':
+          description: Fetch Contacts
+          content:
+            application/json:
+              example:
+                data:
+                - id: 143451
+                  name: Ahmed
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: ahmed.adel@testRasayel.com
+                  phone: null
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2022-12-27T10:03:16.823Z'
+                  updated_at: '2022-12-27T10:03:16.823Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 312818
+                  name: Jane Doe
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '38976123123'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-01-31T18:42:47.466Z'
+                  updated_at: '2023-01-31T18:42:47.466Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1125016
+                  name: TRest
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: test@testig.comn
+                  phone: null
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-04-06T07:11:48.519Z'
+                  updated_at: '2023-04-06T07:11:48.519Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 474007
+                  name: ''
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '34622310425'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-02-17T15:34:28.716Z'
+                  updated_at: '2023-02-17T15:34:28.716Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 643435
+                  name: ''
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '16037670030'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-06T09:34:35.349Z'
+                  updated_at: '2023-03-06T09:34:35.349Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955317
+                  name: '966533952817'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966533952817'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:41.014Z'
+                  updated_at: '2023-03-29T11:51:33.815Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955422
+                  name: '966581990160'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966581990160'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T09:00:34.091Z'
+                  updated_at: '2023-03-29T11:51:36.601Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1360131
+                  name: Arabic
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: arabic-322@hotmail.com
+                  phone: '5225532503216'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-05-01T10:29:09.925Z'
+                  updated_at: '2023-05-01T10:29:10.013Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955307
+                  name: '966564000128'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966564000128'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.106Z'
+                  updated_at: '2023-03-29T11:51:32.934Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955308
+                  name: '966566091333'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966566091333'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.197Z'
+                  updated_at: '2023-03-29T11:51:33.009Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955309
+                  name: '966551008351'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966551008351'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.291Z'
+                  updated_at: '2023-03-29T11:51:33.086Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955310
+                  name: '966500572733'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966500572733'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.370Z'
+                  updated_at: '2023-03-29T11:51:33.160Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955311
+                  name: '966561474745'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966561474745'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.443Z'
+                  updated_at: '2023-03-29T11:51:33.242Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955312
+                  name: '966540545120'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966540545120'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.535Z'
+                  updated_at: '2023-03-29T11:51:33.315Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955313
+                  name: '966553490736'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966553490736'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.617Z'
+                  updated_at: '2023-03-29T11:51:33.439Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955314
+                  name: '966590589864'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966590589864'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.683Z'
+                  updated_at: '2023-03-29T11:51:33.530Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955315
+                  name: '966566290990'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966566290990'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.802Z'
+                  updated_at: '2023-03-29T11:51:33.615Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955316
+                  name: '966550535692'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966550535692'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:40.920Z'
+                  updated_at: '2023-03-29T11:51:33.750Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955318
+                  name: '966537775403'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966537775403'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:41.078Z'
+                  updated_at: '2023-03-29T11:51:33.894Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 955319
+                  name: '966533063030'
+                  first_name: null
+                  last_name: null
+                  display_name: null
+                  email: null
+                  phone: '966533063030'
+                  tags: []
+                  properties: []
+                  channels: []
+                  created_at: '2023-03-28T08:58:41.145Z'
+                  updated_at: '2023-03-29T11:51:33.968Z'
+                  account_id: 40
+                  app_id: 40
+                pagination:
+                  total_count: 9019
+                  total_pages: 451
+                  current_page: 1
+                  next_page: 2
+                  previous_page: null
+                  first_page: true
+                  last_page: false
+    post:
+      operationId: contactsCreateContact
+      summary: Create Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: Ahmed
+              phone: '201110892957'
+              tag_ids:
+              - 1889
+              - 1771
+              properties:
+              - id: 11
+                value: 23 Imaginary st.
+      responses:
+        '201':
+          description: Create Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Ahmed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: null
+                phone: '201110892957'
+                tags:
+                - id: 1889
+                  tag_name: VIP
+                  tag_description: ''
+                  tag_color: '#DC2626'
+                  created_at: '2023-09-08T10:47:35.883Z'
+                  updated_at: '2023-09-08T10:47:35.883Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1771
+                  tag_name: hs-sync-qa
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-08-28T09:02:26.321Z'
+                  updated_at: '2023-08-28T09:02:26.321Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 56
+                properties:
+                - id: 11
+                  name: Address
+                  custom: true
+                  editable: true
+                  value: 23 Imaginary st.
+                  label: null
+                  value_type: TEXT
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Ahmed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:50:54.643Z'
+                account_id: 40
+                app_id: 40
+  /contacts/{id}:
+    patch:
+      operationId: contactsUpdateContact
+      summary: Update Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: Mohamed
+              phone: '+201508293385'
+              email: updated_email@rasayel.io
+              tag_ids:
+              - 1892
+              - 1893
+              properties:
+              - id: 11
+                value: 23 Imaginary st.
+      responses:
+        '201':
+          description: Update Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 11
+                  name: Address
+                  custom: true
+                  editable: true
+                  value: 23 Imaginary st.
+                  label: null
+                  value_type: TEXT
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      operationId: contactsFetchContact
+      summary: Fetch Contact
+      tags:
+      - Contacts
+      responses:
+        '200':
+          description: Fetch Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /contacts/{id}/tag:
+    post:
+      operationId: contactsTagContact
+      summary: Tag Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              tag_ids:
+              - 1890
+      responses:
+        '201':
+          description: Tag Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      operationId: contactsUntagContact
+      summary: Untag Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              tag_ids:
+              - 1892
+      responses:
+        '201':
+          description: Untag Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /contacts/{id}/properties:
+    post:
+      operationId: contactsAttachPropertiesToContact
+      summary: Attach Properties to Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              properties:
+              - id: 11
+                value: 23 Imaginary st.
+      responses:
+        '200':
+          description: Attach Properties to Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 11
+                  name: Address
+                  custom: true
+                  editable: true
+                  value: 23 Imaginary st.
+                  label: null
+                  value_type: TEXT
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      operationId: contactsDetachPropertiesFromContact
+      summary: Detach Properties from Contact
+      tags:
+      - Contacts
+      requestBody:
+        content:
+          application/json:
+            example:
+              properties_ids:
+              - 11
+      responses:
+        '200':
+          description: Detach Properties from Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /contacts/{id}/properties/{property_id}:
+    delete:
+      operationId: contactsDetachPropertyFromContact
+      summary: Detach Property from Contact
+      tags:
+      - Contacts
+      responses:
+        '200':
+          description: Detach Property from Contact
+          content:
+            application/json:
+              example:
+                id: 7558784
+                name: Mohamed
+                first_name: null
+                last_name: null
+                display_name: null
+                email: updated_email@rasayel.io
+                phone: '201508293385'
+                tags:
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                  created_by_id: 1608
+                properties:
+                - id: 1
+                  name: User display name
+                  custom: false
+                  editable: false
+                  value: Mohamed
+                  label: null
+                  value_type: TEXT
+                - id: 3
+                  name: User email
+                  custom: false
+                  editable: false
+                  value: ''
+                  label: null
+                  value_type: TEXT
+                - id: 2
+                  name: User phone
+                  custom: false
+                  editable: false
+                  value: '201234567899'
+                  label: null
+                  value_type: TEXT
+                channels: []
+                created_at: '2024-04-30T15:50:54.643Z'
+                updated_at: '2024-04-30T15:52:09.369Z'
+                account_id: 40
+                app_id: 40
+      parameters:
+      - name: property_id
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /templates:
+    get:
+      operationId: templatesFetchTemplates
+      summary: Fetch Templates
+      tags:
+      - Templates
+      responses:
+        '200':
+          description: Fetch a Specific Channel's Templates
+          content:
+            application/json:
+              example:
+                data:
+                - id: 19169
+                  uuid: 7dc69df1-0483-4eb8-9fd1-e758e55c2723
+                  name: abandoned_18
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: BODY
+                    text: 'Hello {{1}}, Thanks for checking out our store! We noticed that you didn''t
+                      buy the items you had collected in your cart. We''d like to offer you a {{2}} discount
+                      for the items you selected. If you''d like to claim the discount and finish shopping,
+                      select "Go to my cart". You could also talk to one of our agents.
+
+                      Have a lovely day!'
+                  - type: BUTTONS
+                    buttons:
+                    - type: PHONE_NUMBER
+                      text: Call Sales
+                      phone_number: '+4915258537843'
+                    - type: URL
+                      text: Go to my cart
+                      url: https://www.rasayel.io/
+                  active: true
+                  state: accepted
+                  created_at: '2022-12-21T17:52:50.876Z'
+                  updated_at: '2023-09-21T04:31:50.732Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16493
+                  uuid: 9ed35f45-2e28-464c-ac2e-29a77679d792
+                  name: abandoned_cart_1
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, Looks like you have an abandoned cart in our store. We would like
+                      to offer you free delivery for your selected items. Would you like to finish your
+                      purchase?
+                  - type: BUTTONS
+                    buttons:
+                    - type: QUICK_REPLY
+                      text: Yes.
+                    - type: QUICK_REPLY
+                      text: No.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:02:49.154Z'
+                  updated_at: '2022-10-21T05:08:44.794Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16498
+                  uuid: 7c17f175-4bc8-4c8a-aab5-3a46b8e8c57b
+                  name: abandoned_cart_2
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, Thanks for checking out our store! We noticed that you did not
+                      buy the items that you had collected in your cart. We would like to offer you a
+                      {{2}} discount for the items you selected, Would you like to claim your discount
+                      and finish your shopping?
+                  - type: BUTTONS
+                    buttons:
+                    - type: QUICK_REPLY
+                      text: Yes.
+                    - type: QUICK_REPLY
+                      text: No.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:05:07.816Z'
+                  updated_at: '2022-10-21T03:53:46.939Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 278
+                  uuid: 59d85961-610c-4e01-ae98-350177ce896a
+                  name: account_update_1
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: 'We have just got a new update for your account details, try to go here: {{1}}
+                      to check your updated information.'
+                  active: true
+                  state: accepted
+                  created_at: '2021-04-22T10:40:02.533Z'
+                  updated_at: '2023-03-30T10:37:51.920Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 279
+                  uuid: 6dd0818c-0e78-4e61-8df6-33b6f5abf906
+                  name: account_update_2
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: 'We have just got a new update for your account details, try to go here: {{1}}
+                      to check your updated information.'
+                  active: true
+                  state: accepted
+                  created_at: '2021-04-22T10:40:02.544Z'
+                  updated_at: '2023-03-30T10:37:52.167Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 19557
+                  uuid: 189987b3-373e-4612-a9bd-7814332dd27d
+                  name: account_update_22
+                  language: en_US
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello, we would like to inform you that your account has been updated
+                  active: true
+                  state: accepted
+                  created_at: '2022-12-27T10:54:56.413Z'
+                  updated_at: '2023-03-30T23:32:50.586Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 284
+                  uuid: 7b9ce744-9e27-4f3a-a941-c5f5e2c83cc3
+                  name: account_update_3
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: 'We have just got a new update for your account details, try to go here: {{1}}
+                      to check your updated information.'
+                  active: true
+                  state: accepted
+                  created_at: '2021-04-22T10:40:02.599Z'
+                  updated_at: '2023-03-30T23:32:54.171Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 283
+                  uuid: 0fb6ff7b-a161-4457-b5ac-c0c6f42b3e1d
+                  name: appointment
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: 'Hello {{1}}, I have booked us a slot in our calendar for our initial chat for
+                      you based on our earlier conversations. Here is the appointment link: {{2}} Thank
+                      you'
+                  active: true
+                  state: accepted
+                  created_at: '2021-04-22T10:40:02.588Z'
+                  updated_at: '2023-03-30T10:37:53.918Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 453
+                  uuid: c5ae1d49-ccbe-4f5b-abe3-205392a2205e
+                  name: appointment_1
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: HEADER
+                    format: TEXT
+                    text: Welcome to our online shoe store {{1}}!
+                  - type: BODY
+                    text: 'Hello {{1}}, I have booked us a slot in our calendar for our initial chat for
+                      you based on our earlier conversations. Here is the appointment link: {{2}} Thank
+                      you'
+                  - type: FOOTER
+                    text: Thank you so much!
+                  - type: BUTTONS
+                    buttons:
+                    - type: QUICK_REPLY
+                      text: Call us
+                    - type: QUICK_REPLY
+                      text: Speak to a human now
+                  active: true
+                  state: accepted
+                  created_at: '2021-08-02T14:40:05.693Z'
+                  updated_at: '2023-03-30T23:32:52.167Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 33247
+                  uuid: 314c68fb-1a1d-4fc3-b639-92dc43213861
+                  name: appointment_change
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hey{{1}} we are sorry to let you know that appointment date has changed to {{2}}
+                      feel free to reach out to us if you wish to cancel.
+                  active: true
+                  state: accepted
+                  created_at: '2023-07-28T11:27:19.139Z'
+                  updated_at: '2023-07-29T12:37:44.920Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16637
+                  uuid: be1abd83-7ea0-4b3a-b674-7a7c22a74b88
+                  name: appointment_confirm1
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Dear {{1}}, Your appointment with {{2}} on {{3}} at {{4}} is confirmed. Please,
+                      arrive 10 minutes earlier and bring an identification card with you. We look forward
+                      to seeing you.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:43:07.294Z'
+                  updated_at: '2023-03-30T23:32:51.966Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16650
+                  uuid: 7d91ec71-9897-4da8-af2e-cb3460e159b7
+                  name: appointment_confirm2
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Dear {{1}}, You have booked an appointment with {{2}} on {{3}} at {{4}}. We
+                      look forward to seeing you.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:45:46.905Z'
+                  updated_at: '2023-03-30T10:37:48.666Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 32598
+                  uuid: 7ef5e1cb-ea5f-41aa-b2b2-d62483eef779
+                  name: appointment_confirmation
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hi {{1}}, this is {{2}}. We just wanted to confirm your appointment scheduled
+                      for {{3}}. Please reply 'Confirm' or 'Reschedule' as per your convenience.
+                  active: true
+                  state: accepted
+                  created_at: '2023-07-18T09:32:45.854Z'
+                  updated_at: '2023-07-18T09:32:45.854Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16711
+                  uuid: fffcaac0-42f4-4a83-9f65-c65079552797
+                  name: appointment_remind
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Dear {{1}}, This is a gentle reminder that you have an appointment with {{2}}
+                      on {{3}} at {{4}}. You are advised to arrive 15 minutes before your appointment.
+                      Thank you.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T14:29:24.336Z'
+                  updated_at: '2023-03-30T23:32:49.885Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16737
+                  uuid: 6d08e1bf-c71c-493c-a70e-b5d38d5564e6
+                  name: appointment_remind1
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, This is to remind you that you are seeing {{2}} on {{3}} at {{4}}.
+                      Our address is below. Have a lovely day!
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T14:33:45.155Z'
+                  updated_at: '2023-03-30T23:32:50.079Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 34079
+                  uuid: ed6f77ce-a4f0-4f13-97ef-7e5fe53cd98b
+                  name: back_in_stock
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: BODY
+                    text: 'Hi {{1}},
+
+                      Great news! The product you sought, {{2}}, is back in stock. Hurry, quantities are
+                      limited, and they''re selling fast!'
+                  - type: FOOTER
+                    text: Thank you for shopping with us!
+                  - type: BUTTONS
+                    buttons:
+                    - type: URL
+                      text: Visit our page
+                      url: https://www.rasayel.io/
+                    - type: PHONE_NUMBER
+                      text: Talk to an agent
+                      phone_number: '+38970223377'
+                  active: true
+                  state: accepted
+                  created_at: '2023-08-14T07:52:51.007Z'
+                  updated_at: '2023-08-14T19:57:49.930Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 40327
+                  uuid: a9c43af4-fa61-49d9-9ecf-94deff5297b2
+                  name: business_profile_activation_es
+                  language: es
+                  category: UTILITY
+                  components:
+                  - type: HEADER
+                    format: VIDEO
+                  - type: BODY
+                    text: "{{1}}, tu perfil en Google My Business ya está listo\U0001F31F\n¡Es hora de\
+                      \ darle vida y activarlo!\n\nPara ello, solo necesitas completar la Verificación\
+                      \ por Video\U0001F4F9\n\n*Nosotros no podemos verificarlo por ti, ya que viola los\
+                      \ Términos y Condiciones de Google y el perfil de tu negocio sería borrado* ❌ \U0001F30E\
+                      \n\n¿Cómo hacerlo?\U0001F4F2 Subirás un video directamente en Google\n¿Listo para\
+                      \ el desafío? Sigue estos pasos (puedes verlos en el video)\n\n1️⃣Abre tu Perfil\
+                      \ de Negocio *en tu móvil* haciendo click aquí: {{2}} \n2️⃣Presiona \\\"Verificar\\\
+                      \" (o Get Verified) y sigue los pasos.\n3️⃣Comienza la grabación del video. ¡Sonríe\
+                      \ a la cámara y muestra tu pasión empresarial!\n4️⃣Detén la grabación, y sube el\
+                      \ video en Google para su revisión.\n\n¡Y eso es todo! Google revisará tu video\
+                      \ y estarás más cerca de destacar en línea.⏳\n\nAquí puedes ver un ejemplo del video\
+                      \ que Google solicita: https://www.youtube.com/watch?v=_2S01mCnjpE\n\nSi tienes\
+                      \ alguna duda durante el proceso ponte en contacto con nosotros.\U0001F64C"
+                  active: true
+                  state: accepted
+                  created_at: '2023-10-13T13:26:30.946Z'
+                  updated_at: '2024-02-29T21:37:45.609Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16574
+                  uuid: ce5ea6f7-7080-4e27-9109-ca458b17c422
+                  name: cancellation_1
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, This is to confirm that your order of {{2}} has been canceled.
+                      We have not charged your credit card. Have a nice day.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:21:39.601Z'
+                  updated_at: '2023-03-30T10:37:50.668Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16575
+                  uuid: 26c82e0f-ee38-46ad-bc25-1ebe13b1fabd
+                  name: cancellation_2
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, we have received your cancellation request. Since you canceled
+                      {{2}} days before the delivery date, a cancellation fee of {{3}} has been incurred.
+                      Thank you and have a lovely day.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:22:16.238Z'
+                  updated_at: '2023-03-30T10:37:50.954Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16579
+                  uuid: c624cf5e-4fb1-4975-98f0-b8da3191bb0c
+                  name: cancellation_3
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, we received your cancellation request for the {{2}} you had ordered.
+                      We are very sorry to see that you are not interested in it anymore and will cancel
+                      it immediately. Would you like to tell us why you’d like to cancel?
+                  - type: BUTTONS
+                    buttons:
+                    - type: QUICK_REPLY
+                      text: High shipping cost
+                    - type: QUICK_REPLY
+                      text: High product cost
+                    - type: QUICK_REPLY
+                      text: Long waiting time
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:23:53.588Z'
+                  updated_at: '2023-03-30T23:32:52.372Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 36193
+                  uuid: b53b052b-51cf-4b1f-a286-8d45ef2a30e1
+                  name: car_inquiry_followup
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: HEADER
+                    format: IMAGE
+                  - type: BODY
+                    text: 'Hey there! I''m just following up in regards to the call we had earlier, attached
+                      is a photo of the car you were looking at.
+
+
+                      Let me know if you''re still interested.'
+                  active: true
+                  state: accepted
+                  created_at: '2023-09-12T10:58:31.236Z'
+                  updated_at: '2024-02-29T21:37:46.313Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16555
+                  uuid: 02a6d020-55f7-4345-9310-f6404dab8ddd
+                  name: cash_on_delivery_1
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, We received your order of {{2}} with cash-on-delivery as your payment
+                      method. Please, select “Confirm” if you still want the item or “Cancel” if you’d
+                      like to cancel your order.
+                  - type: BUTTONS
+                    buttons:
+                    - type: QUICK_REPLY
+                      text: Confirm.
+                    - type: QUICK_REPLY
+                      text: Cancel.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:15:16.734Z'
+                  updated_at: '2023-03-30T10:37:51.145Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16556
+                  uuid: c54e989e-8311-448b-8fb8-6a6c0a4d808f
+                  name: cash_on_delivery_2
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, We received your order of {{2}}. If you are still interested in
+                      receiving it, please select “Confirm”. If you are not interested anymore, please
+                      select “Cancel”. Thank you and have a lovely day!
+                  - type: BUTTONS
+                    buttons:
+                    - type: QUICK_REPLY
+                      text: Confirm.
+                    - type: QUICK_REPLY
+                      text: Cancel.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:18:18.052Z'
+                  updated_at: '2023-03-30T10:37:50.638Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 16561
+                  uuid: 12f77ece-8329-4a1a-ad41-45e2accd2a57
+                  name: cash_on_delivery_3
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, We received your order of {{2}} with cash on delivery as your payment
+                      method. If you are still interested in receiving it, please select “Confirm” within
+                      the next 24 hours otherwise we’d have to cancel your order 🙁 Thank you, and have
+                      a beautiful day! ✨
+                  - type: BUTTONS
+                    buttons:
+                    - type: QUICK_REPLY
+                      text: Confirm.
+                    - type: QUICK_REPLY
+                      text: Cancel.
+                  active: true
+                  state: accepted
+                  created_at: '2022-10-20T13:20:08.882Z'
+                  updated_at: '2023-03-30T10:37:48.211Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 272
+                  uuid: 50c46e8d-fe87-47df-97dd-070cea21f62b
+                  name: confirmation
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, here is your account confirmation link {{2}} Thank you.
+                  active: true
+                  state: accepted
+                  created_at: '2021-04-22T10:40:02.467Z'
+                  updated_at: '2023-03-30T10:37:48.545Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 43978
+                  uuid: 68b4e64d-bf1c-4bd5-9b0d-387164b339b5
+                  name: contact_options
+                  language: en_US
+                  category: MARKETING
+                  components:
+                  - type: BODY
+                    text: Hello, {{1}}. Choose one of these options to contact us.
+                  - type: BUTTONS
+                    buttons:
+                    - type: QUICK_REPLY
+                      text: Phone Call
+                    - type: QUICK_REPLY
+                      text: Email
+                    - type: QUICK_REPLY
+                      text: Here
+                  active: true
+                  state: accepted
+                  created_at: '2023-11-28T11:37:44.307Z'
+                  updated_at: '2023-11-28T15:32:47.899Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 43328
+                  uuid: 3ea67e6c-92cf-484a-9d2e-5196258c4356
+                  name: continue_conversation
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: BODY
+                    text: Hey {{1}} this is {{2}} - click below to continue the conversation!
+                  - type: BUTTONS
+                    buttons:
+                    - type: PHONE_NUMBER
+                      text: Call us
+                      phone_number: '+34800721106'
+                  active: true
+                  state: accepted
+                  created_at: '2023-11-16T10:26:54.856Z'
+                  updated_at: '2023-11-16T10:27:45.574Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 418
+                  uuid: f0f6f5bf-849a-4695-9086-f7106a7405c9
+                  name: continue_inquiry
+                  language: en
+                  category: UTILITY
+                  components:
+                  - type: BODY
+                    text: Hello {{1}}, We have an update on your earlier question/inquiry, please reply
+                      with "yes" in order for us to continue our conversation with you. 🙌
+                  active: true
+                  state: accepted
+                  created_at: '2021-07-04T12:40:04.424Z'
+                  updated_at: '2023-03-30T23:32:53.179Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 36170
+                  uuid: d59d183b-4775-4c53-b84d-ee80c90d5d4c
+                  name: customer_assistance
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: HEADER
+                    format: IMAGE
+                  - type: BODY
+                    text: Hey there, how can we help you?
+                  active: true
+                  state: accepted
+                  created_at: '2023-09-12T10:09:53.702Z'
+                  updated_at: '2024-02-29T21:37:44.367Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 43310
+                  uuid: 66b4f2dd-b18e-4e37-b3d9-7634d1c2f2f1
+                  name: customer_follow_up
+                  language: en
+                  category: MARKETING
+                  components:
+                  - type: HEADER
+                    format: TEXT
+                    text: Checking in with you
+                  - type: BODY
+                    text: Dear {{1}} - just checking back in with you again!
+                  - type: FOOTER
+                    text: Thanks!
+                  - type: BUTTONS
+                    buttons:
+                    - type: PHONE_NUMBER
+                      text: Call us
+                      phone_number: '+353894776444'
+                    - type: URL
+                      text: Online
+                      url: https://rasayel.io/
+                  active: true
+                  state: accepted
+                  created_at: '2023-11-16T10:20:17.211Z'
+                  updated_at: '2023-11-16T19:27:47.156Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                pagination:
+                  total_count: 213
+                  total_pages: 8
+                  current_page: 1
+                  next_page: 2
+                  previous_page: null
+                  first_page: true
+                  last_page: false
+    post:
+      operationId: templatesCreateTemplate
+      summary: Create Template
+      tags:
+      - Templates
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: marketing_template_1
+              category: MARKETING
+              language: en
+              channel_id: 10053
+              components:
+              - type: HEADER
+                format: TEXT
+                text: Checkout Our New Feature!
+              - type: BODY
+                text: Hello {{1}}, this is {{2}} from Rasayel, have you checked out our newly released
+                  feature?
+              - type: BUTTONS
+                buttons:
+                - type: URL
+                  text: Check it out!
+                  url: https://rasayel.io/{{1}}
+      responses:
+        '201':
+          description: Create a new Template
+          content:
+            application/json:
+              example:
+                id: 64768
+                uuid: 24382906-ede1-43e5-99d2-208e3c5b3c1f
+                name: marketing_template_1
+                language: en
+                category: MARKETING
+                components:
+                - type: HEADER
+                  format: TEXT
+                  text: Checkout Our New Feature!
+                - type: BODY
+                  text: Hello {{1}}, this is {{2}} from Rasayel, have you checked out our newly released
+                    feature?
+                - type: BUTTONS
+                  buttons:
+                  - type: URL
+                    text: Check it out!
+                    url: https://rasayel.io/{{1}}
+                active: true
+                state: under_review
+                created_at: '2024-04-30T14:59:31.951Z'
+                updated_at: '2024-04-30T14:59:31.951Z'
+                account_id: 40
+                app_id: 40
+                channel_id: 10053
+  /templates/{id}:
+    patch:
+      operationId: templatesUpdateTemplate
+      summary: Update Template
+      tags:
+      - Templates
+      requestBody:
+        content:
+          application/json:
+            example:
+              components:
+              - type: HEADER
+                format: TEXT
+                text: New Text
+              - type: BODY
+                text: Hello this is an updated body {{1}}
+      responses:
+        '200':
+          description: Successful response
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      operationId: templatesDeleteTemplate
+      summary: Delete Template
+      tags:
+      - Templates
+      responses:
+        '200':
+          description: Successful response
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      operationId: templatesFetchTemplate
+      summary: Fetch Template
+      tags:
+      - Templates
+      responses:
+        '200':
+          description: Fetch a single Template
+          content:
+            application/json:
+              example:
+                id: 272
+                uuid: 50c46e8d-fe87-47df-97dd-070cea21f62b
+                name: confirmation
+                language: en
+                category: UTILITY
+                components:
+                - type: BODY
+                  text: Hello {{1}}, here is your account confirmation link {{2}} Thank you.
+                active: true
+                state: accepted
+                created_at: '2021-04-22T10:40:02.467Z'
+                updated_at: '2023-03-30T10:37:48.545Z'
+                account_id: 40
+                app_id: 40
+                channel_id: 59
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /messages:
+    post:
+      operationId: messagesSendAMessage
+      summary: Send a Message
+      tags:
+      - Messages
+      requestBody:
+        content:
+          application/json:
+            example:
+              conversation_id: 3159041
+              type: TEXT
+              text:
+                body: This is a text message
+      responses:
+        '201':
+          description: Sending Text Message with Conversation ID
+          content:
+            application/json:
+              example:
+                id: 59363186
+                uuid: 765f6478-1115-469d-a643-d55259d9f14b
+                message_type: text
+                message_subtype: no_msubtype
+                message_category: user
+                direction: outbound
+                failure_reason: null
+                sent_at: '2024-04-30T14:01:07.777Z'
+                delivered_at: null
+                read_at: null
+                failed_at: null
+                deleted_at: null
+                received_at: null
+                created_at: '2024-04-30T14:01:07.781Z'
+                updated_at: '2024-04-30T14:01:08.265Z'
+                account_id: 40
+                app_id: 40
+                channel_id: 10053
+                conversation_id: 3159041
+  /conversations:
+    get:
+      operationId: conversationsFetchConversations
+      summary: Fetch Conversations
+      tags:
+      - Conversations
+      responses:
+        '200':
+          description: Fetch Conversations
+          content:
+            application/json:
+              example:
+                data:
+                - id: 2222638
+                  uuid: 2cd9386d-ae3d-4d06-89da-de97bd33dd22
+                  channel_type: dialog_waba
+                  state: closed
+                  first_inbound_message_at: null
+                  first_outbound_message_at: null
+                  last_inbound_message_at: '2024-03-13T12:28:19.000Z'
+                  last_outbound_message_at: '2024-03-13T12:28:27.000Z'
+                  last_opened_at: '2024-03-12T22:13:29.082Z'
+                  last_closed_at: '2024-03-13T12:28:27.290Z'
+                  assignee_id: 4291
+                  assigned_team_id: null
+                  snoozed_until: null
+                  created_at: '2024-01-04T15:53:19.217Z'
+                  updated_at: '2024-03-13T12:28:27.290Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 59
+                - id: 2283506
+                  uuid: 042cff8f-3528-486a-a738-a664cc7184b2
+                  channel_type: cloud_waba
+                  state: opened
+                  first_inbound_message_at: null
+                  first_outbound_message_at: null
+                  last_inbound_message_at: '2024-01-15T11:14:40.000Z'
+                  last_outbound_message_at: '2024-04-22T16:33:51.000Z'
+                  last_opened_at: '2024-01-16T09:29:16.646Z'
+                  last_closed_at: '2024-01-15T11:12:57.227Z'
+                  assignee_id: 5329
+                  assigned_team_id: null
+                  snoozed_until: null
+                  created_at: '2024-01-12T11:55:37.603Z'
+                  updated_at: '2024-04-22T16:33:51.291Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 2390
+                - id: 3159041
+                  uuid: 67f1a913-fa86-444a-9615-b41e6e3fe8ef
+                  channel_type: cloud_waba
+                  state: opened
+                  first_inbound_message_at: null
+                  first_outbound_message_at: null
+                  last_inbound_message_at: '2024-04-30T12:21:53.000Z'
+                  last_outbound_message_at: '2024-04-30T14:01:07.000Z'
+                  last_opened_at: '2024-04-30T12:21:55.402Z'
+                  last_closed_at: '2024-04-22T16:34:27.669Z'
+                  assignee_id: 4291
+                  assigned_team_id: null
+                  snoozed_until: null
+                  created_at: '2024-03-04T17:57:45.928Z'
+                  updated_at: '2024-04-30T14:01:08.270Z'
+                  account_id: 40
+                  app_id: 40
+                  channel_id: 10053
+                pagination:
+                  total_count: 3
+                  total_pages: 1
+                  current_page: 1
+                  next_page: null
+                  previous_page: null
+                  first_page: true
+                  last_page: true
+  /conversations/{id}:
+    put:
+      operationId: conversationsUpdateConversation
+      summary: Update Conversation
+      tags:
+      - Conversations
+      requestBody:
+        content:
+          application/json:
+            example:
+              assignee_id: 1234
+      responses:
+        '200':
+          description: Unassign a conversation
+          content:
+            application/json:
+              example:
+                id: 2222638
+                uuid: 2cd9386d-ae3d-4d06-89da-de97bd33dd22
+                channel_type: dialog_waba
+                state: closed
+                first_inbound_message_at: null
+                first_outbound_message_at: null
+                last_inbound_message_at: '2024-03-13T12:28:19.000Z'
+                last_outbound_message_at: '2024-03-13T12:28:27.000Z'
+                last_opened_at: '2024-03-12T22:13:29.082Z'
+                last_closed_at: '2024-03-13T12:28:27.290Z'
+                assignee_id: null
+                assigned_team_id: null
+                snoozed_until: null
+                created_at: '2024-01-04T15:53:19.217Z'
+                updated_at: '2024-03-13T12:28:27.290Z'
+                account_id: 40
+                app_id: 40
+                channel_id: 59
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+  /tags:
+    get:
+      operationId: tagsFetchTags
+      summary: Fetch Tags
+      tags:
+      - Tags
+      responses:
+        '200':
+          description: Fetch Tags
+          content:
+            application/json:
+              example:
+                data:
+                - id: 44
+                  tag_name: first-customer
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_by_id: 49
+                  created_at: '2021-03-28T20:39:00.011Z'
+                  updated_at: '2021-03-28T20:39:00.011Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 45
+                  tag_name: telegram
+                  tag_description: ''
+                  tag_color: '#2563EB'
+                  created_by_id: 49
+                  created_at: '2021-03-28T20:39:07.450Z'
+                  updated_at: '2021-03-28T20:39:07.450Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 46
+                  tag_name: wants-to-buy
+                  tag_description: ''
+                  tag_color: '#DC2626'
+                  created_by_id: 49
+                  created_at: '2021-03-28T20:40:10.490Z'
+                  updated_at: '2021-03-28T20:40:10.490Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 51
+                  tag_name: trying
+                  tag_description: new tag
+                  tag_color: '#fff'
+                  created_by_id: 49
+                  created_at: '2021-04-13T07:46:29.023Z'
+                  updated_at: '2021-04-13T07:46:29.023Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 200
+                  tag_name: testtags
+                  tag_description: ''
+                  tag_color: '#2563EB'
+                  created_by_id: 52
+                  created_at: '2022-04-12T13:33:03.840Z'
+                  updated_at: '2022-04-12T13:33:03.840Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 237
+                  tag_name: Customer
+                  tag_description: VIP Customer
+                  tag_color: '#EA61F2'
+                  created_by_id: 1194
+                  created_at: '2022-08-05T14:27:06.445Z'
+                  updated_at: '2022-08-05T14:27:06.445Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1889
+                  tag_name: VIP
+                  tag_description: ''
+                  tag_color: '#DC2626'
+                  created_by_id: 1608
+                  created_at: '2023-09-08T10:47:35.883Z'
+                  updated_at: '2023-09-08T10:47:35.883Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1890
+                  tag_name: New customer
+                  tag_description: ''
+                  tag_color: '#34D399'
+                  created_by_id: 1608
+                  created_at: '2023-09-08T10:52:26.642Z'
+                  updated_at: '2023-09-08T10:52:26.642Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 407
+                  tag_name: create
+                  tag_description: ''
+                  tag_color: '#2563EB'
+                  created_by_id: 1361
+                  created_at: '2022-12-07T13:38:37.284Z'
+                  updated_at: '2022-12-07T13:38:37.284Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 408
+                  tag_name: how many can show up here
+                  tag_description: ''
+                  tag_color: '#2563EB'
+                  created_by_id: 1361
+                  created_at: '2022-12-07T13:38:46.151Z'
+                  updated_at: '2022-12-07T13:38:46.151Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 415
+                  tag_name: room-booking
+                  tag_description: null
+                  tag_color: '#DC2626'
+                  created_by_id: 56
+                  created_at: '2022-12-09T22:55:16.319Z'
+                  updated_at: '2022-12-09T22:55:16.319Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 437
+                  tag_name: newTag
+                  tag_description: newTag
+                  tag_color: '#2563EB'
+                  created_by_id: 2097
+                  created_at: '2022-12-19T20:52:21.877Z'
+                  updated_at: '2022-12-19T20:52:21.877Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 453
+                  tag_name: VK
+                  tag_description: ''
+                  tag_color: '#00FFFF'
+                  created_by_id: 888
+                  created_at: '2022-12-27T10:28:57.695Z'
+                  updated_at: '2022-12-27T10:28:57.695Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1892
+                  tag_name: Considering
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_by_id: 1608
+                  created_at: '2023-09-08T11:19:30.841Z'
+                  updated_at: '2023-09-08T11:19:30.841Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1893
+                  tag_name: new-features
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_by_id: 1608
+                  created_at: '2023-09-08T11:20:47.727Z'
+                  updated_at: '2023-09-08T11:20:47.727Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 622
+                  tag_name: blueconv
+                  tag_description: null
+                  tag_color: '#2563EB'
+                  created_by_id: 52
+                  created_at: '2023-02-01T17:58:29.781Z'
+                  updated_at: '2023-02-01T17:58:29.781Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 730
+                  tag_name: anewtag
+                  tag_description: null
+                  tag_color: '#059669'
+                  created_by_id: 56
+                  created_at: '2023-02-17T14:33:49.595Z'
+                  updated_at: '2023-02-17T14:33:49.595Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 752
+                  tag_name: shopify
+                  tag_description: ''
+                  tag_color: '#059669'
+                  created_by_id: 49
+                  created_at: '2023-02-21T11:24:09.333Z'
+                  updated_at: '2023-02-21T11:24:09.333Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 753
+                  tag_name: order
+                  tag_description: ''
+                  tag_color: '#FBBF24'
+                  created_by_id: 49
+                  created_at: '2023-02-21T11:24:14.261Z'
+                  updated_at: '2023-02-21T11:24:14.261Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1771
+                  tag_name: hs-sync-qa
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_by_id: 56
+                  created_at: '2023-08-28T09:02:26.321Z'
+                  updated_at: '2023-08-28T09:02:26.321Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1094
+                  tag_name: sales
+                  tag_description: ''
+                  tag_color: '#DC2626'
+                  created_by_id: 1194
+                  created_at: '2023-04-18T17:00:38.594Z'
+                  updated_at: '2023-04-18T17:00:51.703Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1108
+                  tag_name: Jigooli
+                  tag_description: dog owners
+                  tag_color: '#34D399'
+                  created_by_id: 1194
+                  created_at: '2023-04-28T19:49:27.071Z'
+                  updated_at: '2023-04-28T19:49:27.071Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1166
+                  tag_name: testtag213123
+                  tag_description: ''
+                  tag_color: '#F87171'
+                  created_by_id: 56
+                  created_at: '2023-05-11T10:15:33.712Z'
+                  updated_at: '2023-05-11T10:15:33.712Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1167
+                  tag_name: 13r531r
+                  tag_description: ''
+                  tag_color: '#F59E0B'
+                  created_by_id: 56
+                  created_at: '2023-05-11T10:15:49.920Z'
+                  updated_at: '2023-05-11T10:15:49.920Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1380
+                  tag_name: cash-on-delivery
+                  tag_description: null
+                  tag_color: '#059669'
+                  created_by_id: 1060
+                  created_at: '2023-06-29T12:10:18.740Z'
+                  updated_at: '2023-06-29T12:10:18.740Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1381
+                  tag_name: user-didnt-interact-with-flow
+                  tag_description: null
+                  tag_color: '#2563EB'
+                  created_by_id: 1060
+                  created_at: '2023-06-29T12:18:23.634Z'
+                  updated_at: '2023-06-29T12:18:23.634Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1382
+                  tag_name: user-ignored-flow
+                  tag_description: null
+                  tag_color: '#DC2626'
+                  created_by_id: 1060
+                  created_at: '2023-06-29T12:18:34.990Z'
+                  updated_at: '2023-06-29T12:18:34.990Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1429
+                  tag_name: asking-for-help
+                  tag_description: null
+                  tag_color: '#F87171'
+                  created_by_id: 56
+                  created_at: '2023-07-11T15:25:17.949Z'
+                  updated_at: '2023-07-11T15:25:17.949Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1481
+                  tag_name: tag 1
+                  tag_description: null
+                  tag_color: '#DC2626'
+                  created_by_id: 1060
+                  created_at: '2023-07-18T09:40:09.024Z'
+                  updated_at: '2023-07-18T09:40:09.024Z'
+                  account_id: 40
+                  app_id: 40
+                - id: 1482
+                  tag_name: tag 2
+                  tag_description: null
+                  tag_color: '#34D399'
+                  created_by_id: 1060
+                  created_at: '2023-07-18T09:40:19.399Z'
+                  updated_at: '2023-07-18T09:40:19.399Z'
+                  account_id: 40
+                  app_id: 40
+                pagination:
+                  total_count: 39
+                  total_pages: 2
+                  current_page: 1
+                  next_page: 2
+                  previous_page: null
+                  first_page: true
+                  last_page: false
+  /channels:
+    get:
+      operationId: channelsFetchChannels
+      summary: Fetch Channels
+      tags:
+      - Channels
+      responses:
+        '200':
+          description: Fetch Channels
+          content:
+            application/json:
+              example:
+                data:
+                - id: 233
+                  display_name: Touch Dream Labs LLC
+                  channel_type: gbm
+                  active: true
+                  created_at: '2021-10-08T08:31:05.236Z'
+                  updated_at: '2022-07-07T08:07:02.574Z'
+                  discarded_at: null
+                - id: 325
+                  display_name: 'Touch Dream Labs '
+                  channel_type: gbm
+                  active: true
+                  created_at: '2022-01-05T14:22:27.183Z'
+                  updated_at: '2022-07-07T08:07:14.639Z'
+                  discarded_at: null
+                - id: 136
+                  display_name: TryingBot
+                  channel_type: facebook
+                  active: true
+                  created_at: '2021-07-27T13:16:26.577Z'
+                  updated_at: '2021-08-05T12:29:53.396Z'
+                  discarded_at: '2021-08-05T12:29:53.396Z'
+                - id: 139
+                  display_name: Test Company
+                  channel_type: facebook
+                  active: true
+                  created_at: '2021-07-27T13:16:28.165Z'
+                  updated_at: '2021-08-05T12:29:57.499Z'
+                  discarded_at: '2021-08-05T12:29:57.499Z'
+                - id: 268
+                  display_name: adsfasdfasdfasdfad
+                  channel_type: telegram
+                  active: true
+                  created_at: '2021-10-26T21:31:06.610Z'
+                  updated_at: '2021-10-26T21:31:21.491Z'
+                  discarded_at: '2021-10-26T21:31:21.491Z'
+                - id: 305
+                  display_name: Viber Bot
+                  channel_type: viber
+                  active: true
+                  created_at: '2021-12-11T14:23:53.283Z'
+                  updated_at: '2021-12-11T15:19:58.990Z'
+                  discarded_at: '2021-12-11T15:19:58.990Z'
+                - id: 264
+                  display_name: metal_syndrome
+                  channel_type: twitter
+                  active: true
+                  created_at: '2021-10-23T09:16:35.193Z'
+                  updated_at: '2021-11-09T10:39:45.313Z'
+                  discarded_at: '2021-11-09T10:39:45.313Z'
+                - id: 306
+                  display_name: Blue Shirt Co.
+                  channel_type: viber
+                  active: true
+                  created_at: '2021-12-11T14:28:18.945Z'
+                  updated_at: '2021-12-11T14:41:42.292Z'
+                  discarded_at: '2021-12-11T14:41:42.292Z'
+                - id: 253
+                  display_name: octodev1
+                  channel_type: twitter
+                  active: true
+                  created_at: '2021-10-21T15:51:46.647Z'
+                  updated_at: '2022-02-25T12:33:30.276Z'
+                  discarded_at: '2022-02-25T12:33:30.276Z'
+                - id: 425
+                  display_name: Personal Twitter
+                  channel_type: twitter
+                  active: true
+                  created_at: '2022-02-25T12:46:04.265Z'
+                  updated_at: '2022-02-28T11:51:22.687Z'
+                  discarded_at: '2022-02-28T11:51:22.687Z'
+                - id: 343
+                  display_name: Blue Shirt Viber CO.
+                  channel_type: viber
+                  active: true
+                  created_at: '2022-01-11T10:40:06.445Z'
+                  updated_at: '2022-07-07T08:07:53.212Z'
+                  discarded_at: null
+                - id: 335
+                  display_name: octopdsdev1
+                  channel_type: instagram
+                  active: true
+                  created_at: '2022-01-10T13:53:32.067Z'
+                  updated_at: '2024-02-09T08:49:36.871Z'
+                  discarded_at: '2024-02-09T08:49:36.871Z'
+                - id: 137
+                  display_name: DuPo Test
+                  channel_type: facebook
+                  active: true
+                  created_at: '2021-07-27T13:16:27.264Z'
+                  updated_at: '2024-03-06T21:38:55.602Z'
+                  discarded_at: '2024-03-06T21:38:55.601Z'
+                - id: 473
+                  display_name: Telegram Test bot
+                  channel_type: telegram
+                  active: true
+                  created_at: '2022-04-20T08:54:19.947Z'
+                  updated_at: '2022-04-20T08:56:15.443Z'
+                  discarded_at: '2022-04-20T08:56:15.442Z'
+                - id: 471
+                  display_name: Telnyx Test
+                  channel_type: telnyx_waba
+                  active: true
+                  created_at: '2022-04-07T18:04:47.487Z'
+                  updated_at: '2024-03-06T21:38:47.877Z'
+                  discarded_at: '2024-03-06T21:38:47.876Z'
+                - id: 440
+                  display_name: 360 dialog waba
+                  channel_type: dialog_waba
+                  active: true
+                  created_at: '2022-03-17T13:47:11.026Z'
+                  updated_at: '2022-04-01T14:30:13.433Z'
+                  discarded_at: '2022-04-01T14:30:13.432Z'
+                - id: 60
+                  display_name: Twilio SMS channel
+                  channel_type: twilio_sms
+                  active: true
+                  created_at: '2021-03-28T21:58:35.398Z'
+                  updated_at: '2022-10-11T20:32:04.012Z'
+                  discarded_at: null
+                - id: 87
+                  display_name: Twilio Waba
+                  channel_type: twilio_waba
+                  active: true
+                  created_at: '2021-04-27T15:00:32.812Z'
+                  updated_at: '2022-07-07T08:06:53.596Z'
+                  discarded_at: null
+                - id: 367
+                  display_name: VK blue shirt co Test
+                  channel_type: vkontakte
+                  active: true
+                  created_at: '2022-01-24T12:34:13.770Z'
+                  updated_at: '2022-07-07T08:08:20.738Z'
+                  discarded_at: null
+                - id: 314
+                  display_name: Boto
+                  channel_type: telegram
+                  active: true
+                  created_at: '2021-12-22T13:41:12.294Z'
+                  updated_at: '2022-08-23T18:40:58.934Z'
+                  discarded_at: '2022-08-23T18:40:58.934Z'
+                - id: 58
+                  display_name: RasayelTest Bot
+                  channel_type: telegram
+                  active: true
+                  created_at: '2021-03-28T19:41:25.126Z'
+                  updated_at: '2022-08-08T10:25:50.951Z'
+                  discarded_at: '2022-08-08T10:25:50.950Z'
+                - id: 537
+                  display_name: ABM 1
+                  channel_type: abm
+                  active: true
+                  created_at: '2022-06-20T16:13:22.193Z'
+                  updated_at: '2022-07-07T08:08:31.897Z'
+                  discarded_at: null
+                - id: 540
+                  display_name: Oct test
+                  channel_type: facebook
+                  active: true
+                  created_at: '2022-06-23T07:55:10.257Z'
+                  updated_at: '2022-06-23T08:12:21.812Z'
+                  discarded_at: '2022-06-23T08:12:21.812Z'
+                - id: 541
+                  display_name: Inbox
+                  channel_type: email
+                  active: false
+                  created_at: '2022-06-23T12:36:53.178Z'
+                  updated_at: '2023-04-03T08:52:40.764Z'
+                  discarded_at: '2022-06-24T14:52:50.291Z'
+                - id: 543
+                  display_name: Youssef's personal email
+                  channel_type: email
+                  active: false
+                  created_at: '2022-06-26T14:43:13.384Z'
+                  updated_at: '2023-04-03T08:52:37.468Z'
+                  discarded_at: '2022-06-26T18:59:58.105Z'
+                - id: 547
+                  display_name: OutlookInbox
+                  channel_type: email
+                  active: false
+                  created_at: '2022-06-28T09:44:27.405Z'
+                  updated_at: '2023-04-03T08:52:29.298Z'
+                  discarded_at: '2022-07-22T12:16:13.574Z'
+                - id: 64
+                  display_name: Yellow Shirt
+                  channel_type: telegram
+                  active: true
+                  created_at: '2021-04-11T10:18:36.146Z'
+                  updated_at: '2022-09-19T09:40:38.537Z'
+                  discarded_at: null
+                - id: 648
+                  display_name: Purple Shirt Co
+                  channel_type: dialog_waba
+                  active: true
+                  created_at: '2022-08-29T15:36:14.422Z'
+                  updated_at: '2022-11-16T11:43:34.338Z'
+                  discarded_at: '2022-11-16T11:43:34.338Z'
+                - id: 548
+                  display_name: Telnyx 1
+                  channel_type: telnyx_waba
+                  active: true
+                  created_at: '2022-07-01T16:29:23.037Z'
+                  updated_at: '2024-03-06T21:38:51.754Z'
+                  discarded_at: '2024-03-06T21:38:51.754Z'
+                - id: 144
+                  display_name: BuDu Test
+                  channel_type: facebook
+                  active: true
+                  created_at: '2021-08-05T12:30:21.386Z'
+                  updated_at: '2022-09-30T14:06:47.484Z'
+                  discarded_at: null
+                pagination:
+                  total_count: 61
+                  total_pages: 3
+                  current_page: 1
+                  next_page: 2
+                  previous_page: null
+                  first_page: true
+                  last_page: false
+  /properties:
+    get:
+      operationId: propertiesFetchProperties
+      summary: Fetch Properties
+      tags:
+      - Properties
+      responses:
+        '200':
+          description: Fetch Properties
+          content:
+            application/json:
+              example:
+                data:
+                - id: 5
+                  name: User source
+                  type: TEXT
+                  editable: true
+                  description: The source that created or updated this contact
+                  identifier: user_source
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.714Z'
+                  updated_at: '2024-05-27T09:21:11.714Z'
+                  channel_specific: false
+                  uuid: f376149c-8a87-4bcd-9688-b28fb4bb33c3
+                  archived: false
+                  options: null
+                - id: 4
+                  name: User opt out
+                  type: BOOL
+                  editable: true
+                  description: Whether the user has opted out of receiving marketing messages
+                  identifier: user_opt_out
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.711Z'
+                  updated_at: '2024-05-27T09:21:11.711Z'
+                  channel_specific: false
+                  uuid: e09d62d3-35d8-47d8-93b5-7afe0fec3c7c
+                  archived: false
+                  options: null
+                - id: 3
+                  name: User email
+                  type: TEXT
+                  editable: false
+                  description: User email
+                  identifier: user_email
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.707Z'
+                  updated_at: '2024-05-27T09:21:11.707Z'
+                  channel_specific: false
+                  uuid: 2f9a4337-87ef-4e67-9473-cfdfbb8fb8e6
+                  archived: false
+                  options: null
+                - id: 2
+                  name: User phone
+                  type: TEXT
+                  editable: false
+                  description: User phone
+                  identifier: user_phone
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.704Z'
+                  updated_at: '2024-05-27T09:21:11.704Z'
+                  channel_specific: false
+                  uuid: e91de098-32ad-41f3-aabb-0d00da8e9ddc
+                  archived: false
+                  options: null
+                - id: 1
+                  name: User display name
+                  type: TEXT
+                  editable: false
+                  description: User display name
+                  identifier: user_display_name
+                  standard: true
+                  account_id: 1
+                  app_id: 1
+                  created_at: '2024-05-27T09:21:11.686Z'
+                  updated_at: '2024-05-27T09:21:11.686Z'
+                  channel_specific: false
+                  uuid: c19190aa-ac40-493f-b3cb-3814cd892d06
+                  archived: false
+                  options: null
+                pagination:
+                  total_count: 11
+                  total_pages: 1
+                  current_page: 1
+                  next_page: null
+                  previous_page: null
+                  first_page: true
+                  last_page: true
+    post:
+      operationId: propertiesCreateProperty
+      summary: Create Property
+      tags:
+      - Properties
+      requestBody:
+        content:
+          application/json:
+            example:
+              name: Address
+              type: TEXT
+              description: The address of the contact
+      responses:
+        '200':
+          description: Create Property
+          content:
+            application/json:
+              example:
+                id: 13
+                name: Address
+                type: TEXT
+                editable: true
+                description: The address of the contact
+                identifier: address
+                standard: false
+                account_id: 1
+                app_id: 1
+                created_at: '2024-06-07T12:25:44.394Z'
+                updated_at: '2024-06-07T12:25:44.394Z'
+                channel_specific: false
+                uuid: c7109ee1-3d38-4c2f-9855-9d5458d8f5fe
+                archived: false
+                options: null
+  /properties/{id}:
+    get:
+      operationId: propertiesFetchProperty
+      summary: Fetch Property
+      tags:
+      - Properties
+      responses:
+        '200':
+          description: Fetch Property
+          content:
+            application/json:
+              example:
+                id: 1
+                name: User display name
+                type: TEXT
+                editable: false
+                description: User display name
+                identifier: user_display_name
+                standard: true
+                account_id: 1
+                app_id: 1
+                created_at: '2024-05-27T09:21:11.686Z'
+                updated_at: '2024-05-27T09:21:11.686Z'
+                channel_specific: false
+                uuid: c19190aa-ac40-493f-b3cb-3814cd892d06
+                archived: false
+                options: null
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+components:
+  securitySchemes:
+    basicToken:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: 'Basic Auth value from a Rasayel API key. Send as: Authorization: Basic {token}. API
+        keys carry a Read or Read/Write scope. Optional X_On_Behalf_Of header impersonates a user by ID.'

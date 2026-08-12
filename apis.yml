@@ -209,7 +209,7 @@ maintainers:
   email: info@apis.io
 common:
 - type: OpenAPI
-  url: openapi/rasayel-rest-openapi.yml
+  url: openapi/_original/rasayel-rest-openapi.yml
 - type: Authentication
   url: authentication/rasayel-authentication.yml
 - type: Conventions

@@ -1,0 +1,145 @@
+{
+  "item": [
+    {
+      "id": "2ff68c16-e867-4be9-9749-65f9301e6105",
+      "name": "Messages",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "e5acdd00-3ca9-4bf9-9c96-9063da6f9bf0",
+          "name": "Send a Message",
+          "request": {
+            "name": "Send a Message",
+            "description": {},
+            "url": {
+              "path": [
+                "messages"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"conversation_id\": 3159041,\n  \"type\": \"TEXT\",\n  \"text\": {\n    \"body\": \"This is a text message\"\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "225600f1-d617-4b6b-a01c-73ba7ff11c69",
+              "name": "Sending Text Message with Conversation ID",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "messages"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"conversation_id\": 3159041,\n  \"type\": \"TEXT\",\n  \"text\": {\n    \"body\": \"This is a text message\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 59363186,\n  \"uuid\": \"765f6478-1115-469d-a643-d55259d9f14b\",\n  \"message_type\": \"text\",\n  \"message_subtype\": \"no_msubtype\",\n  \"message_category\": \"user\",\n  \"direction\": \"outbound\",\n  \"failure_reason\": null,\n  \"sent_at\": \"2024-04-30T14:01:07.777Z\",\n  \"delivered_at\": null,\n  \"read_at\": null,\n  \"failed_at\": null,\n  \"deleted_at\": null,\n  \"received_at\": null,\n  \"created_at\": \"2024-04-30T14:01:07.781Z\",\n  \"updated_at\": \"2024-04-30T14:01:08.265Z\",\n  \"account_id\": 40,\n  \"app_id\": 40,\n  \"channel_id\": 10053,\n  \"conversation_id\": 3159041\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.rasayel.io/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "e1805d1e-d3bf-49bf-8a51-09cddf3546b3",
+    "name": "Rasayel REST Channels Messages API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider's public Postman collection.\n\nContact Support:\n Name: Rasayel",
+      "type": "text/plain"
+    }
+  }
+}

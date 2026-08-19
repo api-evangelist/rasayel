@@ -1,0 +1,313 @@
+{
+  "item": [
+    {
+      "id": "c7225624-652e-4276-b511-0b594978474b",
+      "name": "Properties",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f061064e-7ec0-480a-96c5-b57461e93645",
+          "name": "Fetch Properties",
+          "request": {
+            "name": "Fetch Properties",
+            "description": {},
+            "url": {
+              "path": [
+                "properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9cb9f0e0-ffad-415d-b366-cec03f2b1b81",
+              "name": "Fetch Properties",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"id\": 5,\n      \"name\": \"User source\",\n      \"type\": \"TEXT\",\n      \"editable\": true,\n      \"description\": \"The source that created or updated this contact\",\n      \"identifier\": \"user_source\",\n      \"standard\": true,\n      \"account_id\": 1,\n      \"app_id\": 1,\n      \"created_at\": \"2024-05-27T09:21:11.714Z\",\n      \"updated_at\": \"2024-05-27T09:21:11.714Z\",\n      \"channel_specific\": false,\n      \"uuid\": \"f376149c-8a87-4bcd-9688-b28fb4bb33c3\",\n      \"archived\": false,\n      \"options\": null\n    },\n    {\n      \"id\": 4,\n      \"name\": \"User opt out\",\n      \"type\": \"BOOL\",\n      \"editable\": true,\n      \"description\": \"Whether the user has opted out of receiving marketing messages\",\n      \"identifier\": \"user_opt_out\",\n      \"standard\": true,\n      \"account_id\": 1,\n      \"app_id\": 1,\n      \"created_at\": \"2024-05-27T09:21:11.711Z\",\n      \"updated_at\": \"2024-05-27T09:21:11.711Z\",\n      \"channel_specific\": false,\n      \"uuid\": \"e09d62d3-35d8-47d8-93b5-7afe0fec3c7c\",\n      \"archived\": false,\n      \"options\": null\n    },\n    {\n      \"id\": 3,\n      \"name\": \"User email\",\n      \"type\": \"TEXT\",\n      \"editable\": false,\n      \"description\": \"User email\",\n      \"identifier\": \"user_email\",\n      \"standard\": true,\n      \"account_id\": 1,\n      \"app_id\": 1,\n      \"created_at\": \"2024-05-27T09:21:11.707Z\",\n      \"updated_at\": \"2024-05-27T09:21:11.707Z\",\n      \"channel_specific\": false,\n      \"uuid\": \"2f9a4337-87ef-4e67-9473-cfdfbb8fb8e6\",\n      \"archived\": false,\n      \"options\": null\n    },\n    {\n      \"id\": 2,\n      \"name\": \"User phone\",\n      \"type\": \"TEXT\",\n      \"editable\": false,\n      \"description\": \"User phone\",\n      \"identifier\": \"user_phone\",\n      \"standard\": true,\n      \"account_id\": 1,\n      \"app_id\": 1,\n      \"created_at\": \"2024-05-27T09:21:11.704Z\",\n      \"updated_at\": \"2024-05-27T09:21:11.704Z\",\n      \"channel_specific\": false,\n      \"uuid\": \"e91de098-32ad-41f3-aabb-0d00da8e9ddc\",\n      \"archived\": false,\n      \"options\": null\n    },\n    {\n      \"id\": 1,\n      \"name\": \"User display name\",\n      \"type\": \"TEXT\",\n      \"editable\": false,\n      \"description\": \"User display name\",\n      \"identifier\": \"user_display_name\",\n      \"standard\": true,\n      \"account_id\": 1,\n      \"app_id\": 1,\n      \"created_at\": \"2024-05-27T09:21:11.686Z\",\n      \"updated_at\": \"2024-05-27T09:21:11.686Z\",\n      \"channel_specific\": false,\n      \"uuid\": \"c19190aa-ac40-493f-b3cb-3814cd892d06\",\n      \"archived\": false,\n      \"options\": null\n    }\n  ],\n  \"pagination\": {\n    \"total_count\": 11,\n    \"total_pages\": 1,\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"previous_page\": null,\n    \"first_page\": true,\n    \"last_page\": true\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c0f3f4d9-d4f3-4837-9e99-617c32374541",
+          "name": "Create Property",
+          "request": {
+            "name": "Create Property",
+            "description": {},
+            "url": {
+              "path": [
+                "properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Address\",\n  \"type\": \"TEXT\",\n  \"description\": \"The address of the contact\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "39151103-de59-42d0-a554-03aac36b4a8c",
+              "name": "Create Property",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Address\",\n  \"type\": \"TEXT\",\n  \"description\": \"The address of the contact\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 13,\n  \"name\": \"Address\",\n  \"type\": \"TEXT\",\n  \"editable\": true,\n  \"description\": \"The address of the contact\",\n  \"identifier\": \"address\",\n  \"standard\": false,\n  \"account_id\": 1,\n  \"app_id\": 1,\n  \"created_at\": \"2024-06-07T12:25:44.394Z\",\n  \"updated_at\": \"2024-06-07T12:25:44.394Z\",\n  \"channel_specific\": false,\n  \"uuid\": \"c7109ee1-3d38-4c2f-9855-9d5458d8f5fe\",\n  \"archived\": false,\n  \"options\": null\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ed4d1f56-c144-4f21-b4c0-d158b17dacec",
+          "name": "Fetch Property",
+          "request": {
+            "name": "Fetch Property",
+            "description": {},
+            "url": {
+              "path": [
+                "properties",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "da966b9a-b84e-4ba7-bb08-9e4a95d96646",
+              "name": "Fetch Property",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "properties",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 1,\n  \"name\": \"User display name\",\n  \"type\": \"TEXT\",\n  \"editable\": false,\n  \"description\": \"User display name\",\n  \"identifier\": \"user_display_name\",\n  \"standard\": true,\n  \"account_id\": 1,\n  \"app_id\": 1,\n  \"created_at\": \"2024-05-27T09:21:11.686Z\",\n  \"updated_at\": \"2024-05-27T09:21:11.686Z\",\n  \"channel_specific\": false,\n  \"uuid\": \"c19190aa-ac40-493f-b3cb-3814cd892d06\",\n  \"archived\": false,\n  \"options\": null\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.rasayel.io/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "fc15a245-cb32-4ece-b27b-33af1d70db71",
+    "name": "Rasayel REST Channels Properties API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider's public Postman collection.\n\nContact Support:\n Name: Rasayel",
+      "type": "text/plain"
+    }
+  }
+}

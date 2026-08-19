@@ -1,0 +1,124 @@
+{
+  "item": [
+    {
+      "id": "ce85f8fb-3c96-4a96-b8a3-a9261c626c45",
+      "name": "Tags",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "42cf58ce-076f-42d8-aadc-6b985f5f6cb8",
+          "name": "Fetch Tags",
+          "request": {
+            "name": "Fetch Tags",
+            "description": {},
+            "url": {
+              "path": [
+                "tags"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d9bfb07b-07e6-43c6-9df4-71b7dd287961",
+              "name": "Fetch Tags",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "tags"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"id\": 44,\n      \"tag_name\": \"first-customer\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#FBBF24\",\n      \"created_by_id\": 49,\n      \"created_at\": \"2021-03-28T20:39:00.011Z\",\n      \"updated_at\": \"2021-03-28T20:39:00.011Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 45,\n      \"tag_name\": \"telegram\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#2563EB\",\n      \"created_by_id\": 49,\n      \"created_at\": \"2021-03-28T20:39:07.450Z\",\n      \"updated_at\": \"2021-03-28T20:39:07.450Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 46,\n      \"tag_name\": \"wants-to-buy\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#DC2626\",\n      \"created_by_id\": 49,\n      \"created_at\": \"2021-03-28T20:40:10.490Z\",\n      \"updated_at\": \"2021-03-28T20:40:10.490Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 51,\n      \"tag_name\": \"trying\",\n      \"tag_description\": \"new tag\",\n      \"tag_color\": \"#fff\",\n      \"created_by_id\": 49,\n      \"created_at\": \"2021-04-13T07:46:29.023Z\",\n      \"updated_at\": \"2021-04-13T07:46:29.023Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 200,\n      \"tag_name\": \"testtags\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#2563EB\",\n      \"created_by_id\": 52,\n      \"created_at\": \"2022-04-12T13:33:03.840Z\",\n      \"updated_at\": \"2022-04-12T13:33:03.840Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 237,\n      \"tag_name\": \"Customer\",\n      \"tag_description\": \"VIP Customer\",\n      \"tag_color\": \"#EA61F2\",\n      \"created_by_id\": 1194,\n      \"created_at\": \"2022-08-05T14:27:06.445Z\",\n      \"updated_at\": \"2022-08-05T14:27:06.445Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1889,\n      \"tag_name\": \"VIP\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#DC2626\",\n      \"created_by_id\": 1608,\n      \"created_at\": \"2023-09-08T10:47:35.883Z\",\n      \"updated_at\": \"2023-09-08T10:47:35.883Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1890,\n      \"tag_name\": \"New customer\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#34D399\",\n      \"created_by_id\": 1608,\n      \"created_at\": \"2023-09-08T10:52:26.642Z\",\n      \"updated_at\": \"2023-09-08T10:52:26.642Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 407,\n      \"tag_name\": \"create\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#2563EB\",\n      \"created_by_id\": 1361,\n      \"created_at\": \"2022-12-07T13:38:37.284Z\",\n      \"updated_at\": \"2022-12-07T13:38:37.284Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 408,\n      \"tag_name\": \"how many can show up here\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#2563EB\",\n      \"created_by_id\": 1361,\n      \"created_at\": \"2022-12-07T13:38:46.151Z\",\n      \"updated_at\": \"2022-12-07T13:38:46.151Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 415,\n      \"tag_name\": \"room-booking\",\n      \"tag_description\": null,\n      \"tag_color\": \"#DC2626\",\n      \"created_by_id\": 56,\n      \"created_at\": \"2022-12-09T22:55:16.319Z\",\n      \"updated_at\": \"2022-12-09T22:55:16.319Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 437,\n      \"tag_name\": \"newTag\",\n      \"tag_description\": \"newTag\",\n      \"tag_color\": \"#2563EB\",\n      \"created_by_id\": 2097,\n      \"created_at\": \"2022-12-19T20:52:21.877Z\",\n      \"updated_at\": \"2022-12-19T20:52:21.877Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 453,\n      \"tag_name\": \"VK\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#00FFFF\",\n      \"created_by_id\": 888,\n      \"created_at\": \"2022-12-27T10:28:57.695Z\",\n      \"updated_at\": \"2022-12-27T10:28:57.695Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1892,\n      \"tag_name\": \"Considering\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#FBBF24\",\n      \"created_by_id\": 1608,\n      \"created_at\": \"2023-09-08T11:19:30.841Z\",\n      \"updated_at\": \"2023-09-08T11:19:30.841Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1893,\n      \"tag_name\": \"new-features\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_by_id\": 1608,\n      \"created_at\": \"2023-09-08T11:20:47.727Z\",\n      \"updated_at\": \"2023-09-08T11:20:47.727Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 622,\n      \"tag_name\": \"blueconv\",\n      \"tag_description\": null,\n      \"tag_color\": \"#2563EB\",\n      \"created_by_id\": 52,\n      \"created_at\": \"2023-02-01T17:58:29.781Z\",\n      \"updated_at\": \"2023-02-01T17:58:29.781Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 730,\n      \"tag_name\": \"anewtag\",\n      \"tag_description\": null,\n      \"tag_color\": \"#059669\",\n      \"created_by_id\": 56,\n      \"created_at\": \"2023-02-17T14:33:49.595Z\",\n      \"updated_at\": \"2023-02-17T14:33:49.595Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 752,\n      \"tag_name\": \"shopify\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#059669\",\n      \"created_by_id\": 49,\n      \"created_at\": \"2023-02-21T11:24:09.333Z\",\n      \"updated_at\": \"2023-02-21T11:24:09.333Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 753,\n      \"tag_name\": \"order\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#FBBF24\",\n      \"created_by_id\": 49,\n      \"created_at\": \"2023-02-21T11:24:14.261Z\",\n      \"updated_at\": \"2023-02-21T11:24:14.261Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1771,\n      \"tag_name\": \"hs-sync-qa\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_by_id\": 56,\n      \"created_at\": \"2023-08-28T09:02:26.321Z\",\n      \"updated_at\": \"2023-08-28T09:02:26.321Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1094,\n      \"tag_name\": \"sales\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#DC2626\",\n      \"created_by_id\": 1194,\n      \"created_at\": \"2023-04-18T17:00:38.594Z\",\n      \"updated_at\": \"2023-04-18T17:00:51.703Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1108,\n      \"tag_name\": \"Jigooli\",\n      \"tag_description\": \"dog owners\",\n      \"tag_color\": \"#34D399\",\n      \"created_by_id\": 1194,\n      \"created_at\": \"2023-04-28T19:49:27.071Z\",\n      \"updated_at\": \"2023-04-28T19:49:27.071Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1166,\n      \"tag_name\": \"testtag213123\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_by_id\": 56,\n      \"created_at\": \"2023-05-11T10:15:33.712Z\",\n      \"updated_at\": \"2023-05-11T10:15:33.712Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1167,\n      \"tag_name\": \"13r531r\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F59E0B\",\n      \"created_by_id\": 56,\n      \"created_at\": \"2023-05-11T10:15:49.920Z\",\n      \"updated_at\": \"2023-05-11T10:15:49.920Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1380,\n      \"tag_name\": \"cash-on-delivery\",\n      \"tag_description\": null,\n      \"tag_color\": \"#059669\",\n      \"created_by_id\": 1060,\n      \"created_at\": \"2023-06-29T12:10:18.740Z\",\n      \"updated_at\": \"2023-06-29T12:10:18.740Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1381,\n      \"tag_name\": \"user-didnt-interact-with-flow\",\n      \"tag_description\": null,\n      \"tag_color\": \"#2563EB\",\n      \"created_by_id\": 1060,\n      \"created_at\": \"2023-06-29T12:18:23.634Z\",\n      \"updated_at\": \"2023-06-29T12:18:23.634Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1382,\n      \"tag_name\": \"user-ignored-flow\",\n      \"tag_description\": null,\n      \"tag_color\": \"#DC2626\",\n      \"created_by_id\": 1060,\n      \"created_at\": \"2023-06-29T12:18:34.990Z\",\n      \"updated_at\": \"2023-06-29T12:18:34.990Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1429,\n      \"tag_name\": \"asking-for-help\",\n      \"tag_description\": null,\n      \"tag_color\": \"#F87171\",\n      \"created_by_id\": 56,\n      \"created_at\": \"2023-07-11T15:25:17.949Z\",\n      \"updated_at\": \"2023-07-11T15:25:17.949Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1481,\n      \"tag_name\": \"tag 1\",\n      \"tag_description\": null,\n      \"tag_color\": \"#DC2626\",\n      \"created_by_id\": 1060,\n      \"created_at\": \"2023-07-18T09:40:09.024Z\",\n      \"updated_at\": \"2023-07-18T09:40:09.024Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1482,\n      \"tag_name\": \"tag 2\",\n      \"tag_description\": null,\n      \"tag_color\": \"#34D399\",\n      \"created_by_id\": 1060,\n      \"created_at\": \"2023-07-18T09:40:19.399Z\",\n      \"updated_at\": \"2023-07-18T09:40:19.399Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    }\n  ],\n  \"pagination\": {\n    \"total_count\": 39,\n    \"total_pages\": 2,\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"previous_page\": null,\n    \"first_page\": true,\n    \"last_page\": false\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.rasayel.io/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "a2dd2a26-58e0-4bcd-94a9-8d285a47cf21",
+    "name": "Rasayel REST Channels Tags API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider's public Postman collection.\n\nContact Support:\n Name: Rasayel",
+      "type": "text/plain"
+    }
+  }
+}

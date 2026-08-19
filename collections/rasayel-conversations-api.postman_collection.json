@@ -1,0 +1,238 @@
+{
+  "item": [
+    {
+      "id": "392c629b-be04-4e09-93e0-a3615a8f55b0",
+      "name": "Conversations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f88b1cb9-df17-4e3e-b3ff-c3796bbd9a73",
+          "name": "Fetch Conversations",
+          "request": {
+            "name": "Fetch Conversations",
+            "description": {},
+            "url": {
+              "path": [
+                "conversations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "560801db-f471-47eb-8133-bd95fe31f3cc",
+              "name": "Fetch Conversations",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "conversations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"id\": 2222638,\n      \"uuid\": \"2cd9386d-ae3d-4d06-89da-de97bd33dd22\",\n      \"channel_type\": \"dialog_waba\",\n      \"state\": \"closed\",\n      \"first_inbound_message_at\": null,\n      \"first_outbound_message_at\": null,\n      \"last_inbound_message_at\": \"2024-03-13T12:28:19.000Z\",\n      \"last_outbound_message_at\": \"2024-03-13T12:28:27.000Z\",\n      \"last_opened_at\": \"2024-03-12T22:13:29.082Z\",\n      \"last_closed_at\": \"2024-03-13T12:28:27.290Z\",\n      \"assignee_id\": 4291,\n      \"assigned_team_id\": null,\n      \"snoozed_until\": null,\n      \"created_at\": \"2024-01-04T15:53:19.217Z\",\n      \"updated_at\": \"2024-03-13T12:28:27.290Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"channel_id\": 59\n    },\n    {\n      \"id\": 2283506,\n      \"uuid\": \"042cff8f-3528-486a-a738-a664cc7184b2\",\n      \"channel_type\": \"cloud_waba\",\n      \"state\": \"opened\",\n      \"first_inbound_message_at\": null,\n      \"first_outbound_message_at\": null,\n      \"last_inbound_message_at\": \"2024-01-15T11:14:40.000Z\",\n      \"last_outbound_message_at\": \"2024-04-22T16:33:51.000Z\",\n      \"last_opened_at\": \"2024-01-16T09:29:16.646Z\",\n      \"last_closed_at\": \"2024-01-15T11:12:57.227Z\",\n      \"assignee_id\": 5329,\n      \"assigned_team_id\": null,\n      \"snoozed_until\": null,\n      \"created_at\": \"2024-01-12T11:55:37.603Z\",\n      \"updated_at\": \"2024-04-22T16:33:51.291Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"channel_id\": 2390\n    },\n    {\n      \"id\": 3159041,\n      \"uuid\": \"67f1a913-fa86-444a-9615-b41e6e3fe8ef\",\n      \"channel_type\": \"cloud_waba\",\n      \"state\": \"opened\",\n      \"first_inbound_message_at\": null,\n      \"first_outbound_message_at\": null,\n      \"last_inbound_message_at\": \"2024-04-30T12:21:53.000Z\",\n      \"last_outbound_message_at\": \"2024-04-30T14:01:07.000Z\",\n      \"last_opened_at\": \"2024-04-30T12:21:55.402Z\",\n      \"last_closed_at\": \"2024-04-22T16:34:27.669Z\",\n      \"assignee_id\": 4291,\n      \"assigned_team_id\": null,\n      \"snoozed_until\": null,\n      \"created_at\": \"2024-03-04T17:57:45.928Z\",\n      \"updated_at\": \"2024-04-30T14:01:08.270Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"channel_id\": 10053\n    }\n  ],\n  \"pagination\": {\n    \"total_count\": 3,\n    \"total_pages\": 1,\n    \"current_page\": 1,\n    \"next_page\": null,\n    \"previous_page\": null,\n    \"first_page\": true,\n    \"last_page\": true\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7d132192-e1cc-4d98-ad8a-3dffb570f07a",
+          "name": "Update Conversation",
+          "request": {
+            "name": "Update Conversation",
+            "description": {},
+            "url": {
+              "path": [
+                "conversations",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"assignee_id\": 1234\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c708d5a8-ecdb-48ee-8e10-7bec8cd8b779",
+              "name": "Unassign a conversation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "conversations",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"assignee_id\": 1234\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 2222638,\n  \"uuid\": \"2cd9386d-ae3d-4d06-89da-de97bd33dd22\",\n  \"channel_type\": \"dialog_waba\",\n  \"state\": \"closed\",\n  \"first_inbound_message_at\": null,\n  \"first_outbound_message_at\": null,\n  \"last_inbound_message_at\": \"2024-03-13T12:28:19.000Z\",\n  \"last_outbound_message_at\": \"2024-03-13T12:28:27.000Z\",\n  \"last_opened_at\": \"2024-03-12T22:13:29.082Z\",\n  \"last_closed_at\": \"2024-03-13T12:28:27.290Z\",\n  \"assignee_id\": null,\n  \"assigned_team_id\": null,\n  \"snoozed_until\": null,\n  \"created_at\": \"2024-01-04T15:53:19.217Z\",\n  \"updated_at\": \"2024-03-13T12:28:27.290Z\",\n  \"account_id\": 40,\n  \"app_id\": 40,\n  \"channel_id\": 59\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.rasayel.io/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "c9e32eeb-3c5b-408d-86fc-fea7e72d64a3",
+    "name": "Rasayel REST Channels Conversations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider's public Postman collection.\n\nContact Support:\n Name: Rasayel",
+      "type": "text/plain"
+    }
+  }
+}

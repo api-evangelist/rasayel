@@ -1,0 +1,70 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Rasayel REST Channels Properties API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Properties",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Fetch Properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.rasayel.io/v1/properties"
+          },
+          "docs": "Fetch Properties"
+        },
+        {
+          "info": {
+            "name": "Create Property",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.rasayel.io/v1/properties",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create Property"
+        },
+        {
+          "info": {
+            "name": "Fetch Property",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.rasayel.io/v1/properties/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Fetch Property"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,1002 @@
+{
+  "item": [
+    {
+      "id": "9b63ea51-1398-4d03-afb5-4e3bdc7db0af",
+      "name": "Contacts",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "07d5a605-47b8-4b2e-815d-567d63cb2452",
+          "name": "Fetch Contacts",
+          "request": {
+            "name": "Fetch Contacts",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ac476176-fa48-4ab5-bf17-5b26ee323b99",
+              "name": "Fetch Contacts",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"id\": 143451,\n      \"name\": \"Ahmed\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": \"ahmed.adel@testRasayel.com\",\n      \"phone\": null,\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2022-12-27T10:03:16.823Z\",\n      \"updated_at\": \"2022-12-27T10:03:16.823Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 312818,\n      \"name\": \"Jane Doe\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"38976123123\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-01-31T18:42:47.466Z\",\n      \"updated_at\": \"2023-01-31T18:42:47.466Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1125016,\n      \"name\": \"TRest\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": \"test@testig.comn\",\n      \"phone\": null,\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-04-06T07:11:48.519Z\",\n      \"updated_at\": \"2023-04-06T07:11:48.519Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 474007,\n      \"name\": \"\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"34622310425\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-02-17T15:34:28.716Z\",\n      \"updated_at\": \"2023-02-17T15:34:28.716Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 643435,\n      \"name\": \"\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"16037670030\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-06T09:34:35.349Z\",\n      \"updated_at\": \"2023-03-06T09:34:35.349Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955317,\n      \"name\": \"966533952817\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966533952817\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:41.014Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.815Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955422,\n      \"name\": \"966581990160\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966581990160\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T09:00:34.091Z\",\n      \"updated_at\": \"2023-03-29T11:51:36.601Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 1360131,\n      \"name\": \"Arabic\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": \"arabic-322@hotmail.com\",\n      \"phone\": \"5225532503216\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-05-01T10:29:09.925Z\",\n      \"updated_at\": \"2023-05-01T10:29:10.013Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955307,\n      \"name\": \"966564000128\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966564000128\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.106Z\",\n      \"updated_at\": \"2023-03-29T11:51:32.934Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955308,\n      \"name\": \"966566091333\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966566091333\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.197Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.009Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955309,\n      \"name\": \"966551008351\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966551008351\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.291Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.086Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955310,\n      \"name\": \"966500572733\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966500572733\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.370Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.160Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955311,\n      \"name\": \"966561474745\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966561474745\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.443Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.242Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955312,\n      \"name\": \"966540545120\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966540545120\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.535Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.315Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955313,\n      \"name\": \"966553490736\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966553490736\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.617Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.439Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955314,\n      \"name\": \"966590589864\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966590589864\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.683Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.530Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955315,\n      \"name\": \"966566290990\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966566290990\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.802Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.615Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955316,\n      \"name\": \"966550535692\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966550535692\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:40.920Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.750Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955318,\n      \"name\": \"966537775403\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966537775403\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:41.078Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.894Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    },\n    {\n      \"id\": 955319,\n      \"name\": \"966533063030\",\n      \"first_name\": null,\n      \"last_name\": null,\n      \"display_name\": null,\n      \"email\": null,\n      \"phone\": \"966533063030\",\n      \"tags\": [],\n      \"properties\": [],\n      \"channels\": [],\n      \"created_at\": \"2023-03-28T08:58:41.145Z\",\n      \"updated_at\": \"2023-03-29T11:51:33.968Z\",\n      \"account_id\": 40,\n      \"app_id\": 40\n    }\n  ],\n  \"pagination\": {\n    \"total_count\": 9019,\n    \"total_pages\": 451,\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"previous_page\": null,\n    \"first_page\": true,\n    \"last_page\": false\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d33a3f06-256a-4c43-acf5-4e78a722661f",
+          "name": "Create Contact",
+          "request": {
+            "name": "Create Contact",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Ahmed\",\n  \"phone\": \"201110892957\",\n  \"tag_ids\": [\n    1889,\n    1771\n  ],\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"value\": \"23 Imaginary st.\"\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c14e1159-acc8-4239-a95b-1c3ed9359625",
+              "name": "Create Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Ahmed\",\n  \"phone\": \"201110892957\",\n  \"tag_ids\": [\n    1889,\n    1771\n  ],\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"value\": \"23 Imaginary st.\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7558784,\n  \"name\": \"Ahmed\",\n  \"first_name\": null,\n  \"last_name\": null,\n  \"display_name\": null,\n  \"email\": null,\n  \"phone\": \"201110892957\",\n  \"tags\": [\n    {\n      \"id\": 1889,\n      \"tag_name\": \"VIP\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#DC2626\",\n      \"created_at\": \"2023-09-08T10:47:35.883Z\",\n      \"updated_at\": \"2023-09-08T10:47:35.883Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1771,\n      \"tag_name\": \"hs-sync-qa\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_at\": \"2023-08-28T09:02:26.321Z\",\n      \"updated_at\": \"2023-08-28T09:02:26.321Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 56\n    }\n  ],\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"name\": \"Address\",\n      \"custom\": true,\n      \"editable\": true,\n      \"value\": \"23 Imaginary st.\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 1,\n      \"name\": \"User display name\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"Ahmed\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"User email\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"User phone\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"201234567899\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    }\n  ],\n  \"channels\": [],\n  \"created_at\": \"2024-04-30T15:50:54.643Z\",\n  \"updated_at\": \"2024-04-30T15:50:54.643Z\",\n  \"account_id\": 40,\n  \"app_id\": 40\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "15a0381c-a078-4b72-b37f-f4a97a5ee7b4",
+          "name": "Update Contact",
+          "request": {
+            "name": "Update Contact",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PATCH",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Mohamed\",\n  \"phone\": \"+201508293385\",\n  \"email\": \"updated_email@rasayel.io\",\n  \"tag_ids\": [\n    1892,\n    1893\n  ],\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"value\": \"23 Imaginary st.\"\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "8e727f0b-0829-45d6-a31b-1f6bc9f742a3",
+              "name": "Update Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PATCH",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name\": \"Mohamed\",\n  \"phone\": \"+201508293385\",\n  \"email\": \"updated_email@rasayel.io\",\n  \"tag_ids\": [\n    1892,\n    1893\n  ],\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"value\": \"23 Imaginary st.\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7558784,\n  \"name\": \"Mohamed\",\n  \"first_name\": null,\n  \"last_name\": null,\n  \"display_name\": null,\n  \"email\": \"updated_email@rasayel.io\",\n  \"phone\": \"201508293385\",\n  \"tags\": [\n    {\n      \"id\": 1892,\n      \"tag_name\": \"Considering\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#FBBF24\",\n      \"created_at\": \"2023-09-08T11:19:30.841Z\",\n      \"updated_at\": \"2023-09-08T11:19:30.841Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1893,\n      \"tag_name\": \"new-features\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_at\": \"2023-09-08T11:20:47.727Z\",\n      \"updated_at\": \"2023-09-08T11:20:47.727Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    }\n  ],\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"name\": \"Address\",\n      \"custom\": true,\n      \"editable\": true,\n      \"value\": \"23 Imaginary st.\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 1,\n      \"name\": \"User display name\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"Mohamed\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"User email\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"User phone\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"201234567899\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    }\n  ],\n  \"channels\": [],\n  \"created_at\": \"2024-04-30T15:50:54.643Z\",\n  \"updated_at\": \"2024-04-30T15:52:09.369Z\",\n  \"account_id\": 40,\n  \"app_id\": 40\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "36309ad2-bad9-4474-bd20-7691a0cd9db2",
+          "name": "Fetch Contact",
+          "request": {
+            "name": "Fetch Contact",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8e40107e-bacf-4b18-930d-fc8648f74c5d",
+              "name": "Fetch Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7558784,\n  \"name\": \"Mohamed\",\n  \"first_name\": null,\n  \"last_name\": null,\n  \"display_name\": null,\n  \"email\": \"updated_email@rasayel.io\",\n  \"phone\": \"201508293385\",\n  \"tags\": [\n    {\n      \"id\": 1892,\n      \"tag_name\": \"Considering\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#FBBF24\",\n      \"created_at\": \"2023-09-08T11:19:30.841Z\",\n      \"updated_at\": \"2023-09-08T11:19:30.841Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1893,\n      \"tag_name\": \"new-features\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_at\": \"2023-09-08T11:20:47.727Z\",\n      \"updated_at\": \"2023-09-08T11:20:47.727Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    }\n  ],\n  \"properties\": [\n    {\n      \"id\": 1,\n      \"name\": \"User display name\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"Mohamed\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"User email\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"User phone\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"201234567899\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    }\n  ],\n  \"channels\": [],\n  \"created_at\": \"2024-04-30T15:50:54.643Z\",\n  \"updated_at\": \"2024-04-30T15:52:09.369Z\",\n  \"account_id\": 40,\n  \"app_id\": 40\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "08a57bc0-b5f5-4cea-96b4-070fe180a5c9",
+          "name": "Tag Contact",
+          "request": {
+            "name": "Tag Contact",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts",
+                ":id",
+                "tag"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tag_ids\": [\n    1890\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "e714c623-6651-4127-8e9d-8e11087dee28",
+              "name": "Tag Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts",
+                    ":id",
+                    "tag"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"tag_ids\": [\n    1890\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7558784,\n  \"name\": \"Mohamed\",\n  \"first_name\": null,\n  \"last_name\": null,\n  \"display_name\": null,\n  \"email\": \"updated_email@rasayel.io\",\n  \"phone\": \"201508293385\",\n  \"tags\": [\n    {\n      \"id\": 1892,\n      \"tag_name\": \"Considering\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#FBBF24\",\n      \"created_at\": \"2023-09-08T11:19:30.841Z\",\n      \"updated_at\": \"2023-09-08T11:19:30.841Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1893,\n      \"tag_name\": \"new-features\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_at\": \"2023-09-08T11:20:47.727Z\",\n      \"updated_at\": \"2023-09-08T11:20:47.727Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1890,\n      \"tag_name\": \"New customer\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#34D399\",\n      \"created_at\": \"2023-09-08T10:52:26.642Z\",\n      \"updated_at\": \"2023-09-08T10:52:26.642Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    }\n  ],\n  \"properties\": [\n    {\n      \"id\": 1,\n      \"name\": \"User display name\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"Mohamed\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"User email\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"User phone\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"201234567899\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    }\n  ],\n  \"channels\": [],\n  \"created_at\": \"2024-04-30T15:50:54.643Z\",\n  \"updated_at\": \"2024-04-30T15:52:09.369Z\",\n  \"account_id\": 40,\n  \"app_id\": 40\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bbc1b08f-4414-4d6d-9337-e82e632b80dc",
+          "name": "Untag Contact",
+          "request": {
+            "name": "Untag Contact",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts",
+                ":id",
+                "tag"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tag_ids\": [\n    1892\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "cda41618-5884-4e11-8ade-9ae5e80ff554",
+              "name": "Untag Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts",
+                    ":id",
+                    "tag"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"tag_ids\": [\n    1892\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7558784,\n  \"name\": \"Mohamed\",\n  \"first_name\": null,\n  \"last_name\": null,\n  \"display_name\": null,\n  \"email\": \"updated_email@rasayel.io\",\n  \"phone\": \"201508293385\",\n  \"tags\": [\n    {\n      \"id\": 1893,\n      \"tag_name\": \"new-features\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_at\": \"2023-09-08T11:20:47.727Z\",\n      \"updated_at\": \"2023-09-08T11:20:47.727Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1890,\n      \"tag_name\": \"New customer\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#34D399\",\n      \"created_at\": \"2023-09-08T10:52:26.642Z\",\n      \"updated_at\": \"2023-09-08T10:52:26.642Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    }\n  ],\n  \"channels\": [],\n  \"created_at\": \"2024-04-30T15:50:54.643Z\",\n  \"updated_at\": \"2024-04-30T15:52:09.369Z\",\n  \"account_id\": 40,\n  \"app_id\": 40\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "1462de26-785d-4373-b72b-f18998f46924",
+          "name": "Attach Properties to Contact",
+          "request": {
+            "name": "Attach Properties to Contact",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts",
+                ":id",
+                "properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"value\": \"23 Imaginary st.\"\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "70cfd1a4-3512-4f88-950d-6790065253a7",
+              "name": "Attach Properties to Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts",
+                    ":id",
+                    "properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"value\": \"23 Imaginary st.\"\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7558784,\n  \"name\": \"Mohamed\",\n  \"first_name\": null,\n  \"last_name\": null,\n  \"display_name\": null,\n  \"email\": \"updated_email@rasayel.io\",\n  \"phone\": \"201508293385\",\n  \"tags\": [\n    {\n      \"id\": 1892,\n      \"tag_name\": \"Considering\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#FBBF24\",\n      \"created_at\": \"2023-09-08T11:19:30.841Z\",\n      \"updated_at\": \"2023-09-08T11:19:30.841Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1893,\n      \"tag_name\": \"new-features\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_at\": \"2023-09-08T11:20:47.727Z\",\n      \"updated_at\": \"2023-09-08T11:20:47.727Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1890,\n      \"tag_name\": \"New customer\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#34D399\",\n      \"created_at\": \"2023-09-08T10:52:26.642Z\",\n      \"updated_at\": \"2023-09-08T10:52:26.642Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    }\n  ],\n  \"properties\": [\n    {\n      \"id\": 11,\n      \"name\": \"Address\",\n      \"custom\": true,\n      \"editable\": true,\n      \"value\": \"23 Imaginary st.\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 1,\n      \"name\": \"User display name\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"Mohamed\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"User email\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"User phone\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"201234567899\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    }\n  ],\n  \"channels\": [],\n  \"created_at\": \"2024-04-30T15:50:54.643Z\",\n  \"updated_at\": \"2024-04-30T15:52:09.369Z\",\n  \"account_id\": 40,\n  \"app_id\": 40\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "16f2bc18-69fa-4fe8-b5c6-44aedbe229e4",
+          "name": "Detach Properties from Contact",
+          "request": {
+            "name": "Detach Properties from Contact",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts",
+                ":id",
+                "properties"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"properties_ids\": [\n    11\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "35cc7931-76ae-4a1f-b4f9-6b7ab55f33fe",
+              "name": "Detach Properties from Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts",
+                    ":id",
+                    "properties"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"properties_ids\": [\n    11\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7558784,\n  \"name\": \"Mohamed\",\n  \"first_name\": null,\n  \"last_name\": null,\n  \"display_name\": null,\n  \"email\": \"updated_email@rasayel.io\",\n  \"phone\": \"201508293385\",\n  \"tags\": [\n    {\n      \"id\": 1893,\n      \"tag_name\": \"new-features\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_at\": \"2023-09-08T11:20:47.727Z\",\n      \"updated_at\": \"2023-09-08T11:20:47.727Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1890,\n      \"tag_name\": \"New customer\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#34D399\",\n      \"created_at\": \"2023-09-08T10:52:26.642Z\",\n      \"updated_at\": \"2023-09-08T10:52:26.642Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    }\n  ],\n  \"properties\": [\n    {\n      \"id\": 1,\n      \"name\": \"User display name\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"Mohamed\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"User email\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"User phone\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"201234567899\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    }\n  ],\n  \"channels\": [],\n  \"created_at\": \"2024-04-30T15:50:54.643Z\",\n  \"updated_at\": \"2024-04-30T15:52:09.369Z\",\n  \"account_id\": 40,\n  \"app_id\": 40\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8f5bee84-78a8-430e-b3e9-8a5ec7760483",
+          "name": "Detach Property from Contact",
+          "request": {
+            "name": "Detach Property from Contact",
+            "description": {},
+            "url": {
+              "path": [
+                "contacts",
+                ":id",
+                "properties",
+                ":property_id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "property_id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0801ca5d-debb-4519-a168-49b551fceb22",
+              "name": "Detach Property from Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "contacts",
+                    ":id",
+                    "properties",
+                    ":property_id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "property_id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": 7558784,\n  \"name\": \"Mohamed\",\n  \"first_name\": null,\n  \"last_name\": null,\n  \"display_name\": null,\n  \"email\": \"updated_email@rasayel.io\",\n  \"phone\": \"201508293385\",\n  \"tags\": [\n    {\n      \"id\": 1893,\n      \"tag_name\": \"new-features\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#F87171\",\n      \"created_at\": \"2023-09-08T11:20:47.727Z\",\n      \"updated_at\": \"2023-09-08T11:20:47.727Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    },\n    {\n      \"id\": 1890,\n      \"tag_name\": \"New customer\",\n      \"tag_description\": \"\",\n      \"tag_color\": \"#34D399\",\n      \"created_at\": \"2023-09-08T10:52:26.642Z\",\n      \"updated_at\": \"2023-09-08T10:52:26.642Z\",\n      \"account_id\": 40,\n      \"app_id\": 40,\n      \"created_by_id\": 1608\n    }\n  ],\n  \"properties\": [\n    {\n      \"id\": 1,\n      \"name\": \"User display name\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"Mohamed\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 3,\n      \"name\": \"User email\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    },\n    {\n      \"id\": 2,\n      \"name\": \"User phone\",\n      \"custom\": false,\n      \"editable\": false,\n      \"value\": \"201234567899\",\n      \"label\": null,\n      \"value_type\": \"TEXT\"\n    }\n  ],\n  \"channels\": [],\n  \"created_at\": \"2024-04-30T15:50:54.643Z\",\n  \"updated_at\": \"2024-04-30T15:52:09.369Z\",\n  \"account_id\": 40,\n  \"app_id\": 40\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.rasayel.io/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "01eb56b9-9b27-408b-a6dd-aa684ad6010d",
+    "name": "Rasayel REST Channels Contacts API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider's public Postman collection.\n\nContact Support:\n Name: Rasayel",
+      "type": "text/plain"
+    }
+  }
+}

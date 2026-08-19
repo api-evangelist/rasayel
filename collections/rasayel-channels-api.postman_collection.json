@@ -1,0 +1,124 @@
+{
+  "item": [
+    {
+      "id": "3bb5a062-51e7-4372-a07f-5322c2624ee0",
+      "name": "Channels",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "636bc55c-681b-4e0c-aefa-068942a3524d",
+          "name": "Fetch Channels",
+          "request": {
+            "name": "Fetch Channels",
+            "description": {},
+            "url": {
+              "path": [
+                "channels"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "98aa26a2-5ab1-4ee7-915c-f53f3313515e",
+              "name": "Fetch Channels",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "channels"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": [\n    {\n      \"id\": 233,\n      \"display_name\": \"Touch Dream Labs LLC\",\n      \"channel_type\": \"gbm\",\n      \"active\": true,\n      \"created_at\": \"2021-10-08T08:31:05.236Z\",\n      \"updated_at\": \"2022-07-07T08:07:02.574Z\",\n      \"discarded_at\": null\n    },\n    {\n      \"id\": 325,\n      \"display_name\": \"Touch Dream Labs \",\n      \"channel_type\": \"gbm\",\n      \"active\": true,\n      \"created_at\": \"2022-01-05T14:22:27.183Z\",\n      \"updated_at\": \"2022-07-07T08:07:14.639Z\",\n      \"discarded_at\": null\n    },\n    {\n      \"id\": 136,\n      \"display_name\": \"TryingBot\",\n      \"channel_type\": \"facebook\",\n      \"active\": true,\n      \"created_at\": \"2021-07-27T13:16:26.577Z\",\n      \"updated_at\": \"2021-08-05T12:29:53.396Z\",\n      \"discarded_at\": \"2021-08-05T12:29:53.396Z\"\n    },\n    {\n      \"id\": 139,\n      \"display_name\": \"Test Company\",\n      \"channel_type\": \"facebook\",\n      \"active\": true,\n      \"created_at\": \"2021-07-27T13:16:28.165Z\",\n      \"updated_at\": \"2021-08-05T12:29:57.499Z\",\n      \"discarded_at\": \"2021-08-05T12:29:57.499Z\"\n    },\n    {\n      \"id\": 268,\n      \"display_name\": \"adsfasdfasdfasdfad\",\n      \"channel_type\": \"telegram\",\n      \"active\": true,\n      \"created_at\": \"2021-10-26T21:31:06.610Z\",\n      \"updated_at\": \"2021-10-26T21:31:21.491Z\",\n      \"discarded_at\": \"2021-10-26T21:31:21.491Z\"\n    },\n    {\n      \"id\": 305,\n      \"display_name\": \"Viber Bot\",\n      \"channel_type\": \"viber\",\n      \"active\": true,\n      \"created_at\": \"2021-12-11T14:23:53.283Z\",\n      \"updated_at\": \"2021-12-11T15:19:58.990Z\",\n      \"discarded_at\": \"2021-12-11T15:19:58.990Z\"\n    },\n    {\n      \"id\": 264,\n      \"display_name\": \"metal_syndrome\",\n      \"channel_type\": \"twitter\",\n      \"active\": true,\n      \"created_at\": \"2021-10-23T09:16:35.193Z\",\n      \"updated_at\": \"2021-11-09T10:39:45.313Z\",\n      \"discarded_at\": \"2021-11-09T10:39:45.313Z\"\n    },\n    {\n      \"id\": 306,\n      \"display_name\": \"Blue Shirt Co.\",\n      \"channel_type\": \"viber\",\n      \"active\": true,\n      \"created_at\": \"2021-12-11T14:28:18.945Z\",\n      \"updated_at\": \"2021-12-11T14:41:42.292Z\",\n      \"discarded_at\": \"2021-12-11T14:41:42.292Z\"\n    },\n    {\n      \"id\": 253,\n      \"display_name\": \"octodev1\",\n      \"channel_type\": \"twitter\",\n      \"active\": true,\n      \"created_at\": \"2021-10-21T15:51:46.647Z\",\n      \"updated_at\": \"2022-02-25T12:33:30.276Z\",\n      \"discarded_at\": \"2022-02-25T12:33:30.276Z\"\n    },\n    {\n      \"id\": 425,\n      \"display_name\": \"Personal Twitter\",\n      \"channel_type\": \"twitter\",\n      \"active\": true,\n      \"created_at\": \"2022-02-25T12:46:04.265Z\",\n      \"updated_at\": \"2022-02-28T11:51:22.687Z\",\n      \"discarded_at\": \"2022-02-28T11:51:22.687Z\"\n    },\n    {\n      \"id\": 343,\n      \"display_name\": \"Blue Shirt Viber CO.\",\n      \"channel_type\": \"viber\",\n      \"active\": true,\n      \"created_at\": \"2022-01-11T10:40:06.445Z\",\n      \"updated_at\": \"2022-07-07T08:07:53.212Z\",\n      \"discarded_at\": null\n    },\n    {\n      \"id\": 335,\n      \"display_name\": \"octopdsdev1\",\n      \"channel_type\": \"instagram\",\n      \"active\": true,\n      \"created_at\": \"2022-01-10T13:53:32.067Z\",\n      \"updated_at\": \"2024-02-09T08:49:36.871Z\",\n      \"discarded_at\": \"2024-02-09T08:49:36.871Z\"\n    },\n    {\n      \"id\": 137,\n      \"display_name\": \"DuPo Test\",\n      \"channel_type\": \"facebook\",\n      \"active\": true,\n      \"created_at\": \"2021-07-27T13:16:27.264Z\",\n      \"updated_at\": \"2024-03-06T21:38:55.602Z\",\n      \"discarded_at\": \"2024-03-06T21:38:55.601Z\"\n    },\n    {\n      \"id\": 473,\n      \"display_name\": \"Telegram Test bot\",\n      \"channel_type\": \"telegram\",\n      \"active\": true,\n      \"created_at\": \"2022-04-20T08:54:19.947Z\",\n      \"updated_at\": \"2022-04-20T08:56:15.443Z\",\n      \"discarded_at\": \"2022-04-20T08:56:15.442Z\"\n    },\n    {\n      \"id\": 471,\n      \"display_name\": \"Telnyx Test\",\n      \"channel_type\": \"telnyx_waba\",\n      \"active\": true,\n      \"created_at\": \"2022-04-07T18:04:47.487Z\",\n      \"updated_at\": \"2024-03-06T21:38:47.877Z\",\n      \"discarded_at\": \"2024-03-06T21:38:47.876Z\"\n    },\n    {\n      \"id\": 440,\n      \"display_name\": \"360 dialog waba\",\n      \"channel_type\": \"dialog_waba\",\n      \"active\": true,\n      \"created_at\": \"2022-03-17T13:47:11.026Z\",\n      \"updated_at\": \"2022-04-01T14:30:13.433Z\",\n      \"discarded_at\": \"2022-04-01T14:30:13.432Z\"\n    },\n    {\n      \"id\": 60,\n      \"display_name\": \"Twilio SMS channel\",\n      \"channel_type\": \"twilio_sms\",\n      \"active\": true,\n      \"created_at\": \"2021-03-28T21:58:35.398Z\",\n      \"updated_at\": \"2022-10-11T20:32:04.012Z\",\n      \"discarded_at\": null\n    },\n    {\n      \"id\": 87,\n      \"display_name\": \"Twilio Waba\",\n      \"channel_type\": \"twilio_waba\",\n      \"active\": true,\n      \"created_at\": \"2021-04-27T15:00:32.812Z\",\n      \"updated_at\": \"2022-07-07T08:06:53.596Z\",\n      \"discarded_at\": null\n    },\n    {\n      \"id\": 367,\n      \"display_name\": \"VK blue shirt co Test\",\n      \"channel_type\": \"vkontakte\",\n      \"active\": true,\n      \"created_at\": \"2022-01-24T12:34:13.770Z\",\n      \"updated_at\": \"2022-07-07T08:08:20.738Z\",\n      \"discarded_at\": null\n    },\n    {\n      \"id\": 314,\n      \"display_name\": \"Boto\",\n      \"channel_type\": \"telegram\",\n      \"active\": true,\n      \"created_at\": \"2021-12-22T13:41:12.294Z\",\n      \"updated_at\": \"2022-08-23T18:40:58.934Z\",\n      \"discarded_at\": \"2022-08-23T18:40:58.934Z\"\n    },\n    {\n      \"id\": 58,\n      \"display_name\": \"RasayelTest Bot\",\n      \"channel_type\": \"telegram\",\n      \"active\": true,\n      \"created_at\": \"2021-03-28T19:41:25.126Z\",\n      \"updated_at\": \"2022-08-08T10:25:50.951Z\",\n      \"discarded_at\": \"2022-08-08T10:25:50.950Z\"\n    },\n    {\n      \"id\": 537,\n      \"display_name\": \"ABM 1\",\n      \"channel_type\": \"abm\",\n      \"active\": true,\n      \"created_at\": \"2022-06-20T16:13:22.193Z\",\n      \"updated_at\": \"2022-07-07T08:08:31.897Z\",\n      \"discarded_at\": null\n    },\n    {\n      \"id\": 540,\n      \"display_name\": \"Oct test\",\n      \"channel_type\": \"facebook\",\n      \"active\": true,\n      \"created_at\": \"2022-06-23T07:55:10.257Z\",\n      \"updated_at\": \"2022-06-23T08:12:21.812Z\",\n      \"discarded_at\": \"2022-06-23T08:12:21.812Z\"\n    },\n    {\n      \"id\": 541,\n      \"display_name\": \"Inbox\",\n      \"channel_type\": \"email\",\n      \"active\": false,\n      \"created_at\": \"2022-06-23T12:36:53.178Z\",\n      \"updated_at\": \"2023-04-03T08:52:40.764Z\",\n      \"discarded_at\": \"2022-06-24T14:52:50.291Z\"\n    },\n    {\n      \"id\": 543,\n      \"display_name\": \"Youssef's personal email\",\n      \"channel_type\": \"email\",\n      \"active\": false,\n      \"created_at\": \"2022-06-26T14:43:13.384Z\",\n      \"updated_at\": \"2023-04-03T08:52:37.468Z\",\n      \"discarded_at\": \"2022-06-26T18:59:58.105Z\"\n    },\n    {\n      \"id\": 547,\n      \"display_name\": \"OutlookInbox\",\n      \"channel_type\": \"email\",\n      \"active\": false,\n      \"created_at\": \"2022-06-28T09:44:27.405Z\",\n      \"updated_at\": \"2023-04-03T08:52:29.298Z\",\n      \"discarded_at\": \"2022-07-22T12:16:13.574Z\"\n    },\n    {\n      \"id\": 64,\n      \"display_name\": \"Yellow Shirt\",\n      \"channel_type\": \"telegram\",\n      \"active\": true,\n      \"created_at\": \"2021-04-11T10:18:36.146Z\",\n      \"updated_at\": \"2022-09-19T09:40:38.537Z\",\n      \"discarded_at\": null\n    },\n    {\n      \"id\": 648,\n      \"display_name\": \"Purple Shirt Co\",\n      \"channel_type\": \"dialog_waba\",\n      \"active\": true,\n      \"created_at\": \"2022-08-29T15:36:14.422Z\",\n      \"updated_at\": \"2022-11-16T11:43:34.338Z\",\n      \"discarded_at\": \"2022-11-16T11:43:34.338Z\"\n    },\n    {\n      \"id\": 548,\n      \"display_name\": \"Telnyx 1\",\n      \"channel_type\": \"telnyx_waba\",\n      \"active\": true,\n      \"created_at\": \"2022-07-01T16:29:23.037Z\",\n      \"updated_at\": \"2024-03-06T21:38:51.754Z\",\n      \"discarded_at\": \"2024-03-06T21:38:51.754Z\"\n    },\n    {\n      \"id\": 144,\n      \"display_name\": \"BuDu Test\",\n      \"channel_type\": \"facebook\",\n      \"active\": true,\n      \"created_at\": \"2021-08-05T12:30:21.386Z\",\n      \"updated_at\": \"2022-09-30T14:06:47.484Z\",\n      \"discarded_at\": null\n    }\n  ],\n  \"pagination\": {\n    \"total_count\": 61,\n    \"total_pages\": 3,\n    \"current_page\": 1,\n    \"next_page\": 2,\n    \"previous_page\": null,\n    \"first_page\": true,\n    \"last_page\": false\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.rasayel.io/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "Authorization"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "f215b466-c465-4b1e-9f05-a24b865066f2",
+    "name": "Rasayel REST Channels API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Rasayel REST API for WhatsApp B2B sales automation: contacts, message templates, sending messages, conversations, tags, channels, and custom properties. Derived by API Evangelist from the provider's public Postman collection.\n\nContact Support:\n Name: Rasayel",
+      "type": "text/plain"
+    }
+  }
+}

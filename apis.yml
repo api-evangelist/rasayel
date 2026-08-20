@@ -46,6 +46,15 @@ tags:
 - CRM
 - Customer Communication
 - Conversational Commerce
+tags_raw:
+- Company
+- WhatsApp
+- Messaging
+- Business Messaging
+- Sales
+- CRM
+- Customer Communication
+- Conversational Commerce
 - API
 apis:
 - aid: rasayel:rasayel-channels-api
@@ -120,6 +129,8 @@ apis:
   humanURL: https://rest.developers.rasayel.io/
   baseURL: https://api.rasayel.io/v1/
   tags:
+  - Message
+  tags_raw:
   - Messages
   properties:
   - type: OpenAPI

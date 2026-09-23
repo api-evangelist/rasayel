@@ -1,13 +1,7 @@
 {
   "provider": "rasayel",
   "sources": [
-    "rasayel-channels-api-openapi.yml",
-    "rasayel-contacts-api-openapi.yml",
-    "rasayel-conversations-api-openapi.yml",
-    "rasayel-messages-api-openapi.yml",
-    "rasayel-properties-api-openapi.yml",
-    "rasayel-tags-api-openapi.yml",
-    "rasayel-templates-api-openapi.yml"
+    "_original/rasayel-rest-openapi.yml"
   ],
   "outputs": [
     "rasayel-channels-api-openapi.yml",
@@ -21,6 +15,18 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "rasayel-rest-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "rasayel-channels-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "rasayel-contacts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "rasayel-conversations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "rasayel-messages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "rasayel-properties-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "rasayel-tags-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "rasayel-templates-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

@@ -1,0 +1,218 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/rasayel/integrations
+checked:
+- https://composio.dev/toolkits/rasayel
+- https://monid.ai/tools/rasayel
+- https://n8n.io/integrations/rasayel/
+- https://zapier.com/apps/rasayel/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: rasayel
+  url: https://zapier.com/apps/rasayel/integrations
+  external_url: https://rasayel.io/
+  partner_tier: BRONZE
+  triggers:
+  - key: channel_user_created
+    label: New Channel User
+  - key: conversation_created
+    label: New Conversation
+  - key: conversation_updated
+    label: Conversation Updated
+  - key: mention_created
+    label: New Mention
+  - key: message_created
+    label: New Message
+  actions:
+  - key: assign_conversation
+    label: Assign Conversation
+  - key: attachment_upload_from_url
+    label: Create an Attachment
+  - key: close_conversation
+    label: Close Conversation
+  - key: create_channel_user
+    label: Create Channel User
+  - key: create_media_message
+    label: Create a Media Message
+  - key: create_note_message
+    label: Create Note Message
+  - key: create_proactive_template_message
+    label: Create a Proactive Template Message
+  - key: create_proactive_text_message
+    label: Create Proactive Text Message
+  - key: create_template_message
+    label: Create Template Message
+  - key: create_text_message
+    label: Create Text Message
+  - key: open_conversation
+    label: Open Conversation
+  - key: snooze_conversation
+    label: Snooze Conversation
+  searches:
+  - key: conversation
+    label: Find Conversation
+edges:
+- partner_name: Zoho Cliq
+  partner: zoho-cliq
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/zoho-cliq
+  direction: third-party
+  category: Website Builders
+  partner_url: http://cliq.zoho.com/
+- partner_name: Microsoft Excel
+  partner: null
+  partner_match: null
+  partner_candidate: zapier
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/excel
+  direction: third-party
+  category: Microsoft
+  partner_url: https://zapier.com/office.com
+- partner_name: Google Docs
+  partner: google-docs
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/google-docs
+  direction: third-party
+  category: Documents
+  partner_url: http://google.com/
+- partner_name: Facebook Messenger
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/facebook-messenger
+  direction: third-party
+  category: Facebook
+  partner_url: https://www.messenger.com/
+- partner_name: Trello
+  partner: trello
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/trello
+  direction: third-party
+  category: Project Management
+  partner_url: https://trello.com/
+- partner_name: Odoo ERP Self Hosted
+  partner: odoo
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/openerp
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.odoo.com/
+- partner_name: LearningSuite
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/learningsuite
+  direction: third-party
+  category: Education
+  partner_url: https://learningsuite.io/
+- partner_name: Onfleet
+  partner: onfleet
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/onfleet
+  direction: third-party
+  category: Product Management
+  partner_url: https://onfleet.com/
+- partner_name: al-Qur'an
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/rasayel/integrations/al-quran
+  direction: third-party
+  category: Lifestyle & Entertainment
+  partner_url: https://islamic.network/
+templates:
+- title: Add new HubSpot contacts as Rasayel channel users
+  url: https://zapier.com/apps/hubspot/integrations/rasayel/1087699/add-new-hubspot-contacts-as-rasayel-channel-users
+  apps:
+  - hubspot
+  - rasayel
+- title: Create channel users in Rasayel from new Mailchimp subscribers
+  url: https://zapier.com/apps/mailchimp/integrations/rasayel/1088721/create-channel-users-in-rasayel-from-new-mailchimp-subscribers
+  apps:
+  - mailchimp
+  - rasayel
+- title: Send Slack channel messages for new Rasayel conversations
+  url: https://zapier.com/apps/rasayel/integrations/slack/1088727/send-slack-channel-messages-for-new-rasayel-conversations
+  apps:
+  - rasayel
+  - slack
+- title: Send new Rasayel conversations to Discord as channel messages
+  url: https://zapier.com/apps/discord/integrations/rasayel/1277602/send-new-rasayel-conversations-to-discord-as-channel-messages
+  apps:
+  - rasayel
+  - discord
+- title: Create Rasayel proactive template messages when new Amazon Alexa trigger phrases are spoken
+  url: https://zapier.com/apps/amazon-alexa/integrations/rasayel/1326661/create-rasayel-proactive-template-messages-when-new-amazon-alexa-trigger-phrases-are-spoken
+  apps:
+  - amazon-alexa
+  - rasayel
+- title: Forward new Rasayel messages to Slack by sending channel messages
+  url: https://zapier.com/apps/rasayel/integrations/slack/1596956/forward-new-rasayel-messages-to-slack-by-sending-channel-messages
+  apps:
+  - rasayel
+  - slack
+- title: Create proactive template messages in Rasayel for every new deal matching filter in Pipedrive
+  url: https://zapier.com/apps/pipedrive/integrations/rasayel/1677821/create-proactive-template-messages-in-rasayel-for-every-new-deal-matching-filter-in-pipedrive
+  apps:
+  - pipedrive
+  - rasayel
+- title: Manage updated conversations in Rasayel by creating new tasks in ClickUp
+  url: https://zapier.com/apps/clickup/integrations/rasayel/1707158/manage-updated-conversations-in-rasayel-by-creating-new-tasks-in-clickup
+  apps:
+  - rasayel
+  - clickup
+- title: Create proactive template messages in Rasayel for new leads in Facebook Lead Ads
+  url: https://zapier.com/apps/facebook-lead-ads/integrations/rasayel/1709088/create-proactive-template-messages-in-rasayel-for-new-leads-in-facebook-lead-ads
+  apps:
+  - facebook-lead-ads
+  - rasayel
+- title: Create proactive template messages in Rasayel for new leads from Snapchat Lead Ads
+  url: https://zapier.com/apps/rasayel/integrations/snapchat-lead-generation/1717473/create-proactive-template-messages-in-rasayel-for-new-leads-from-snapchat-lead-ads
+  apps:
+  - snapchat-lead-generation
+  - rasayel
+- title: Create proactive template messages in Rasayel for every new lead in Facebook Lead Ads
+  url: https://zapier.com/apps/facebook-lead-ads/integrations/rasayel/1768590/create-proactive-template-messages-in-rasayel-for-every-new-lead-in-facebook-lead-ads
+  apps:
+  - facebook-lead-ads
+  - rasayel
+- title: Create proactive template messages in Rasayel for new form submissions in HubSpot
+  url: https://zapier.com/apps/hubspot/integrations/rasayel/255590956/create-proactive-template-messages-in-rasayel-for-new-form-submissions-in-hubspot
+  apps:
+  - hubspot
+  - rasayel
+template_total: 14

@@ -17,7 +17,6 @@
   arazzo: null
 - slug: rasayel-microsoft-excel
   label: Microsoft Excel
-  partner: microsoft-excel
   partner_name: Microsoft Excel
   category: Microsoft
   type: marketplace
@@ -25,7 +24,7 @@
   channel: ipaas-usage
   evidence: https://zapier.com/apps/rasayel/integrations/excel
   source: edge
-  status: pending-generation
+  status: pending-partner-spec
   arazzo: null
 - slug: rasayel-google-docs
   label: Google Docs
@@ -107,4 +106,17 @@
   evidence: https://zapier.com/apps/rasayel/integrations/al-quran
   source: edge
   status: pending-partner-spec
+  arazzo: null
+- slug: rasayel-stripe-own
+  label: Stripe (own)
+  partner: stripe
+  partner_name: Stripe (own)
+  category: support
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.stripe.com/apps/Rasayel
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
   arazzo: null

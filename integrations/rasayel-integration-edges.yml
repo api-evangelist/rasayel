@@ -7,6 +7,7 @@ checked:
 - https://monid.ai/tools/rasayel
 - https://n8n.io/integrations/rasayel/
 - https://zapier.com/apps/rasayel/integrations
+- stripe/integrations/stripe-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -154,6 +155,23 @@ edges:
   direction: third-party
   category: Lifestyle & Entertainment
   partner_url: https://islamic.network/
+- partner_name: Stripe (own)
+  partner: stripe
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.stripe.com/apps/Rasayel
+  mirror_of: stripe/integrations/stripe-integration-edges.yml
+  apps:
+  - Rasayel
+  listing_count: 1
+  detected: '2026-10-15'
+  detected_by: mirror-platform-listings.py
+  category: support
 templates:
 - title: Add new HubSpot contacts as Rasayel channel users
   url: https://zapier.com/apps/hubspot/integrations/rasayel/1087699/add-new-hubspot-contacts-as-rasayel-channel-users
